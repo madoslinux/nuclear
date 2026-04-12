@@ -25,6 +25,26 @@
       "notFound": "Не найдено"
     }
   },
+  "sources": {
+    "title": "Источники",
+    "streaming": "Трансляция",
+    "streamingDescription": "Источники трансляции предоставляют аудио. При воспроизведении трека источник трансляции находит и доставляет аудиопоток.",
+    "metadata": "Метаданные",
+    "metadataDescription": "Источники метаданных предоставляют информацию об артистах, альбомах и треках. Результаты поиска, страницы артистов и детали альбомов поступают из активного источника метаданных.",
+    "dashboard": "Панель",
+    "dashboardDescription": "Источники панели предоставляют персонализированный контент, такой как лучшие треки, новые релизы и рекомендации на главном экране.",
+    "playlists": "Плейлисты",
+    "playlistsDescription": "Источники плейлистов позволяют импортировать плейлисты из внешних сервисов по URL.",
+    "discovery": "Открытия",
+    "discoveryDescription": "Источники открытий рекомендуют новые треки на основе того, что вы слушаете. Включите музыкальные открытия, используя иконку бумбокса в нижней панели.",
+    "lyrics": "Тексты",
+    "lockedReason": "<metadata>{{metadataName}}</metadata> источник метаданных требует источник трансляции <streaming>{{streamingName}}</streaming>.",
+    "missingStreamingProvider": "Требуемый провайдер трансляции \"{{providerId}}\" недоступен",
+    "noProviders": "Нет установленных провайдеров"
+  },
+  "discovery": {
+    "recommendationError": "Не удалось получить рекомендации"
+  },
   "navigation": {
     "explore": "Обзор",
     "dashboard": "Панель",
@@ -32,7 +52,8 @@
     "favoriteAlbums": "Избранные альбомы",
     "favoriteTracks": "Избранные треки",
     "favoriteArtists": "Избранные артисты",
-    "playlists": "Плейлисты"
+    "playlists": "Плейлисты",
+    "sources": "Источники"
   },
   "favorites": {
     "albums": {
@@ -87,7 +108,7 @@
     "importUrlPlaceholder": "Вставьте URL плейлиста...",
     "importUrlNoProvider": "Ни один плагин не может обработать этот URL. Установите плагин, поддерживающий этот сервис.",
     "importUrlImporting": "Импортирование...",
-    "descriptionPlaceholder": "Add a description..."
+    "descriptionPlaceholder": "Добавьте описание..."
   },
   "search": {
     "title": "Поиск",
@@ -108,7 +129,10 @@
       "albums": "Альбомы",
       "artists": "Артисты",
       "playlists": "Плейлисты"
-    }
+    },
+    "empty-state": "Нет установленного плагина метаданных",
+    "empty-state-description": "Установите плагин метаданных для поиска музыки.",
+    "empty-state-action": "Обзор плагинов"
   },
   "artist": {
     "title": "Артист",
@@ -147,13 +171,38 @@
     "title": "Темы",
     "basic": "Базовые темы",
     "advanced": "Продвинутые темы",
+    "marketplace": "Темы из магазина",
+    "matugenTitle": "Цвета Matugen",
+    "matugenDescription": "Использовать цвета, сгенерированные matugen из ваших обоев",
+    "matugenNotInstalled": "Matugen не установлен. Установите его для использования цветов matugen.",
+    "matugenNotInstalledHint": "Matugen генерирует цвета из ваших обоев. Установите его с помощью: cargo install matugen",
+    "matugenCssPath": "CSS путь",
     "default": "По умолчанию",
-    "description": "Темы из директории данных приложения"
+    "selectPlaceholder": "Выберите тему",
+    "description": "Темы из директории данных приложения",
+    "tabs": {
+      "myThemes": "Мои темы",
+      "store": "Магазин"
+    },
+    "store": {
+      "searchPlaceholder": "Поиск тем...",
+      "install": "Установить",
+      "installing": "Установка",
+      "installed": "Установлена",
+      "by": "от",
+      "installError": "Не удалось установить {{name}}",
+      "loadError": "Не удалось загрузить магазин тем.",
+      "apply": "Применить",
+      "active": "Активна",
+      "uninstall": "Удалить",
+      "uninstallError": "Не удалось удалить {{name}}"
+    }
   },
   "dashboard": {
     "title": "Панель",
-    "empty-state": "Нет доступных данных в панели управления",
-    "empty-state-description": "Включите плагин, который предоставляет содержимое панели.",
+    "empty-state": "Добро пожаловать в Nuclear",
+    "empty-state-description": "Установите плагин, чтобы видеть лучшие треки, новые релизы и рекомендации здесь.",
+    "empty-state-action": "Обзор плагинов",
     "top-tracks": "Лучшие Треки",
     "top-artists": "Лучшие Исполнители",
     "top-albums": "Лучшие Альбомы",
@@ -171,6 +220,11 @@
     "tabs": {
       "installed": "Установлено",
       "store": "Магазин"
+    },
+    "installed": {
+      "empty-state": "Нет установленных плагинов",
+      "empty-state-description": "Обзор магазина плагинов для поиска трансляций, метаданных и других плагинов.",
+      "empty-state-action": "Перейти в магазин"
     },
     "store": {
       "searchPlaceholder": "Поиск плагинов...",
@@ -202,7 +256,10 @@
     }
   },
   "updater": {
-    "updateAvailable": "Доступно обновление"
+    "updateAvailable": "Доступно обновление",
+    "clickToUpdate": "Нажмите для обновления",
+    "downloading": "Загрузка... {{progress}}%",
+    "clickToRestart": "Нажмите для перезапуска"
   },
   "flatpak": {
     "sandboxWarning": "Вы используете Nuclear в среде Flatpak. Некоторые функции могут работать неправильно. Если вы столкнулись с проблемами, попробуйте .deb или AppImage.",
@@ -230,29 +287,33 @@
       "title": "What's New"
     },
     "shortcuts": {
-      "title": "Key Shortcuts",
+      "title": "Горячие клавиши",
       "sections": {
-        "playback": "Playback",
-        "general": "General"
+        "playback": "Воспроизведение",
+        "general": "Общие"
       },
       "commands": {
-        "playback.toggle": "Play / Pause",
-        "playback.next": "Next track",
-        "playback.previous": "Previous track",
-        "playback.seekForward": "Seek forward",
-        "playback.seekBackward": "Seek backward",
-        "playback.volumeUp": "Volume up",
-        "playback.volumeDown": "Volume down",
-        "playback.mute": "Mute / Unmute",
-        "general.toggleSettings": "Open settings"
+        "playback.toggle": "Воспроизвести / Пауза",
+        "playback.next": "Следующий трек",
+        "playback.previous": "Предыдущий трек",
+        "playback.seekForward": "Перемотка вперёд",
+        "playback.seekBackward": "Перемотка назад",
+        "playback.volumeUp": "Увеличить громкость",
+        "playback.volumeDown": "Уменьшить громкость",
+        "playback.mute": "Без звука / Со звуком",
+        "general.toggleSettings": "Открыть настройки"
       },
-      "recording": "Press a key combination...",
-      "resetAll": "Reset all to defaults",
-      "reset": "Reset",
-      "conflict": "This shortcut is already used by \"{{command}}\""
+      "recording": "Нажмите комбинацию клавиш...",
+      "resetAll": "Сбросить всё к умолчанию",
+      "reset": "Сбросить",
+      "conflict": "Это сочетание уже используется для \"{{command}}\""
     },
     "appearance": {
-      "title": "Оформление"
+      "title": "Оформление",
+      "framelessWindow": {
+        "title": "Бесперемышечное окно",
+        "description": "Скрыть нативную строку заголовка. Перетащите верхнюю панель для перемещения окна."
+      }
     },
     "playback": {
       "title": "Воспроизведение",
@@ -271,6 +332,12 @@
       "streamResolutionRetries": {
         "title": "Попытки разрешения трансляции",
         "description": "Количество раз, чтобы повторить попытку разрешить URL трансляции перед переходом к следующему кандидату"
+      },
+      "discoveryVariety": {
+        "title": "Разнообразие открытий",
+        "description": "Насколько рекомендации отклоняются от вашего текущего прослушивания. Ниже — ближе.",
+        "startLabel": "Менее безумно",
+        "endLabel": "Более безумно"
       }
     },
     "layout": {
@@ -297,6 +364,12 @@
         "serverUrl": {
           "title": "URL MCP сервера",
           "description": "Направьте Ваш ИИ инструмент на этот URL для подключения к Nuclear."
+        }
+      },
+      "discord": {
+        "enabled": {
+          "title": "Discord Rich Presence",
+          "description": "Показывать, что вы слушаете, в вашем профиле Discord."
         }
       }
     }
@@ -332,7 +405,14 @@
     }
   },
   "playerBar": {
-    "noTrackPlaying": "Трек не воспроизводится"
+    "noTrackPlaying": "Трек не воспроизводится",
+    "shuffleOn": "Перемешать: вкл",
+    "shuffleOff": "Перемешать: выкл",
+    "repeatOff": "Повтор: выкл",
+    "repeatAll": "Повтор: всё",
+    "repeatOne": "Повтор: один",
+    "discoveryOn": "Открытия: вкл",
+    "discoveryOff": "Открытия: выкл"
   },
   "logs": {
     "title": "Логи",
@@ -350,15 +430,15 @@
     "exportSuccess": "Логи экспортированы"
   },
   "changelog": {
-    "title": "What's New",
-    "seeMore": "See more ({{count}} older)",
+    "title": "Что нового",
+    "seeMore": "Показать ещё ({{count}} старых)",
     "types": {
-      "feature": "Feature",
-      "fix": "Fix",
-      "improvement": "Improvement",
-      "chore": "Chore",
-      "plugin": "Plugin",
-      "docs": "Docs"
+      "feature": "Функция",
+      "fix": "Исправление",
+      "improvement": "Улучшение",
+      "chore": "Задача",
+      "plugin": "Плагин",
+      "docs": "Документы"
     }
   }
 }

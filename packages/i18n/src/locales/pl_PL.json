@@ -32,7 +32,28 @@
     "favoriteAlbums": "Favorite albums",
     "favoriteTracks": "Favorite tracks",
     "favoriteArtists": "Favorite artists",
-    "playlists": "Playlists"
+    "playlists": "Playlists",
+    "sources": "Źródła"
+  },
+  "sources": {
+    "title": "Źródła",
+    "streaming": "Streaming",
+    "streamingDescription": "Źródła streamingu dostarczają audio. Gdy odtwarzasz utwór, źródło streamingu znajduje i dostarcza strumień audio.",
+    "metadata": "Metadane",
+    "metadataDescription": "Źródła metadanych dostarczają informacje o artystach, albumach i utworach. Wyniki wyszukiwania, strony artystów i szczegóły albumów pochodzą z aktywnego źródła metadanych.",
+    "dashboard": "Panel główny",
+    "dashboardDescription": "Źródła panelu dostarczają spersonalizowane treści, takie jak top utwory, nowości i rekomendacje na ekranie głównym.",
+    "playlists": "Playlisty",
+    "playlistsDescription": "Źródła playlist pozwalają importować playlisty z zewnętrznych serwisów przez URL.",
+    "discovery": "Odkrywanie",
+    "discoveryDescription": "Źródła odkrywania rekomendują nowe utwory na podstawie tego, czego słuchasz. Włącz odkrywanie muzyki używając ikony boombox na dolnym pasku.",
+    "lyrics": "Teksty piosenek",
+    "lockedReason": "Źródło metadanych <metadata>{{metadataName}}</metadata> wymaga źródła streamingu <streaming>{{streamingName}}</streaming>.",
+    "missingStreamingProvider": "Wymagany dostawca streamingu \"{{providerId}}\" nie jest dostępny",
+    "noProviders": "Brak zainstalowanych dostawców"
+  },
+  "discovery": {
+    "recommendationError": "Nie udało się pobrać rekomendacji"
   },
   "favorites": {
     "albums": {
@@ -108,7 +129,10 @@
       "albums": "Albums",
       "artists": "Artists",
       "playlists": "Playlists"
-    }
+    },
+    "empty-state": "No metadata plugin installed",
+    "empty-state-description": "Zainstaluj wtyczkę metadanych, aby wyszukiwać muzykę.",
+    "empty-state-action": "Przeglądaj wtyczki"
   },
   "artist": {
     "title": "Artist",
@@ -147,23 +171,48 @@
     "title": "Themes",
     "basic": "Basic themes",
     "advanced": "Advanced themes",
+    "marketplace": "Store themes",
+    "matugenTitle": "Kolory Matugen",
+    "matugenDescription": "Użyj kolorów wygenerowanych przez matugen z Twojego tapety",
+    "matugenNotInstalled": "Matugen nie jest zainstalowany. Zainstaluj go, aby używać kolorów matugen.",
+    "matugenNotInstalledHint": "Matugen generuje kolory z Twojej tapety. Zainstaluj go za pomocą: cargo install matugen",
+    "matugenCssPath": "Ścieżka CSS",
     "default": "Default",
-    "description": "Themes found in your app data themes directory"
+    "selectPlaceholder": "Select a theme",
+    "description": "Themes found in your app data themes directory",
+    "tabs": {
+      "myThemes": "My themes",
+      "store": "Store"
+    },
+    "store": {
+      "searchPlaceholder": "Search themes...",
+      "install": "Install",
+      "installing": "Installing",
+      "installed": "Installed",
+      "by": "by",
+      "installError": "Failed to install {{name}}",
+      "loadError": "Failed to load the theme store.",
+      "apply": "Apply",
+      "active": "Active",
+      "uninstall": "Uninstall",
+      "uninstallError": "Failed to uninstall {{name}}"
+    }
   },
   "dashboard": {
     "title": "Dashboard",
-    "empty-state": "No dashboard data available",
-    "empty-state-description": "Enable a plugin that provides dashboard content.",
-    "top-tracks": "Top Tracks",
-    "top-artists": "Top Artists",
-    "top-albums": "Top Albums",
-    "editorial-playlists": "Top Playlists",
-    "new-releases": "New Releases",
-    "filter-artists": "Filter artists...",
-    "filter-albums": "Filter albums...",
-    "filter-playlists": "Filter playlists...",
-    "filter-releases": "Filter releases...",
-    "nothing-found": "Nothing found"
+    "empty-state": "Witaj w Nuclear",
+    "empty-state-description": "Zainstaluj wtyczkę, aby zobaczyć top utwory, nowości i rekomendacje tutaj.",
+    "empty-state-action": "Przeglądaj wtyczki",
+    "top-tracks": "Top Utwory",
+    "top-artists": "Top Artyści",
+    "top-albums": "Top Albumy",
+    "editorial-playlists": "Top Playlisty",
+    "new-releases": "Nowości",
+    "filter-artists": "Filtruj artystów...",
+    "filter-albums": "Filtruj albumy...",
+    "filter-playlists": "Filtruj playlisty...",
+    "filter-releases": "Filtruj nowości...",
+    "nothing-found": "Nic nie znaleziono"
   },
   "plugins": {
     "title": "Plugins",
@@ -171,6 +220,11 @@
     "tabs": {
       "installed": "Installed",
       "store": "Store"
+    },
+    "installed": {
+      "empty-state": "No plugins installed",
+      "empty-state-description": "Browse the plugin store to find streaming, metadata, and other plugins.",
+      "empty-state-action": "Go to store"
     },
     "store": {
       "searchPlaceholder": "Search plugins...",
@@ -202,7 +256,10 @@
     }
   },
   "updater": {
-    "updateAvailable": "Update available"
+    "updateAvailable": "Update available",
+    "clickToUpdate": "Kliknij, aby zaktualizować",
+    "downloading": "Pobieranie... {{progress}}%",
+    "clickToRestart": "Kliknij, aby restartować"
   },
   "flatpak": {
     "sandboxWarning": "You're running Nuclear in a Flatpak sandbox. Some features may not work correctly. If you experience issues, try the .deb or AppImage instead.",
@@ -252,7 +309,11 @@
       "conflict": "This shortcut is already used by \"{{command}}\""
     },
     "appearance": {
-      "title": "Appearance"
+      "title": "Appearance",
+      "framelessWindow": {
+        "title": "Okno bez ramki",
+        "description": "Ukryj natywny pasek tytułu. Przeciągnij górny pasek, aby przesunąć okno."
+      }
     },
     "playback": {
       "title": "Playback",
@@ -271,6 +332,12 @@
       "streamResolutionRetries": {
         "title": "Stream resolution retries",
         "description": "Number of times to retry resolving a stream URL before moving to the next candidate"
+      },
+      "discoveryVariety": {
+        "title": "Odkrywanie różnorodności",
+        "description": "Jak bardzo rekomendacje odbiegają od tego, czego słuchasz. Niższe oznacza bliższe.",
+        "startLabel": "Mniej szalone",
+        "endLabel": "Bardziej szalone"
       }
     },
     "layout": {
@@ -297,6 +364,12 @@
         "serverUrl": {
           "title": "MCP Server URL",
           "description": "Point your AI tool to this URL to connect to Nuclear."
+        }
+      },
+      "discord": {
+        "enabled": {
+          "title": "Discord Rich Presence",
+          "description": "Pokaż, czego słuchasz, na swoim profilu Discord."
         }
       }
     }
@@ -332,7 +405,14 @@
     }
   },
   "playerBar": {
-    "noTrackPlaying": "No track playing"
+    "noTrackPlaying": "No track playing",
+    "shuffleOn": "Shuffle: on",
+    "shuffleOff": "Shuffle: off",
+    "repeatOff": "Repeat: off",
+    "repeatAll": "Repeat: all",
+    "repeatOne": "Repeat: one",
+    "discoveryOn": "Discovery: on",
+    "discoveryOff": "Discovery: off"
   },
   "logs": {
     "title": "Logs",

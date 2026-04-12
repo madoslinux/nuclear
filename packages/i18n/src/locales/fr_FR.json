@@ -32,7 +32,28 @@
     "favoriteAlbums": "Albums favoris",
     "favoriteTracks": "Morceaux favoris",
     "favoriteArtists": "Artistes favoris",
-    "playlists": "Playlists"
+    "playlists": "Playlists",
+    "sources": "Sources"
+  },
+  "sources": {
+    "title": "Sources",
+    "streaming": "Streaming",
+    "streamingDescription": "Les sources de streaming fournissent l'audio. Lorsque vous lancez une piste, la source de streaming trouve et livre le flux audio.",
+    "metadata": "Métadonnées",
+    "metadataDescription": "Les sources de métadonnées fournissent des informations sur les artistes, albums et pistes. Les résultats de recherche, pages d'artistes et détails d'albums proviennent de la source de métadonnées active.",
+    "dashboard": "Tableau de bord",
+    "dashboardDescription": "Les sources du tableau de bord fournissent du contenu personnalisé comme les pistes populaires, nouvelles sorties et recommandations sur l'écran d'accueil.",
+    "playlists": "Playlists",
+    "playlistsDescription": "Les sources de playlists vous permettent d'importer des playlists depuis des services externes par URL.",
+    "discovery": "Découverte",
+    "discoveryDescription": "Les sources de découverte recommandent de nouvelles pistes basées sur ce que vous écoutez. Activez la découverte musicale en utilisant l'icône boombox dans la barre inférieure.",
+    "lyrics": "Paroles",
+    "lockedReason": "La source de métadonnées <metadata>{{metadataName}}</metadata> nécessite la source de streaming <streaming>{{streamingName}}</streaming>.",
+    "missingStreamingProvider": "Le fournisseur de streaming requis \"{{providerId}}\" n'est pas disponible",
+    "noProviders": "Aucun fournisseur installé"
+  },
+  "discovery": {
+    "recommendationError": "Échec de obtenir des recommandations"
   },
   "favorites": {
     "albums": {
@@ -108,7 +129,10 @@
       "albums": "Albums",
       "artists": "Artistes",
       "playlists": "Playlists"
-    }
+    },
+    "empty-state": "Aucun plugin de métadonnées installé",
+    "empty-state-description": "Installez un plugin de métadonnées pour rechercher de la musique.",
+    "empty-state-action": "Parcourir les plugins"
   },
   "artist": {
     "title": "Artiste",
@@ -147,66 +171,99 @@
     "title": "Thèmes",
     "basic": "Thèmes basiques",
     "advanced": "Thèmes avancés",
+    "marketplace": "Thèmes du store",
+    "matugenTitle": "Couleurs Matugen",
+    "matugenDescription": "Utiliser les couleurs générées par matugen depuis votre papier peint",
+    "matugenNotInstalled": "Matugen n'est pas installé. Installez-le pour utiliser les couleurs matugen.",
+    "matugenNotInstalledHint": "Matugen génère des couleurs depuis votre papier peint. Installez-le avec : cargo install matugen",
+    "matugenCssPath": "Chemin CSS",
     "default": "Par défaut",
-    "description": "Thèmes trouvés dans le répertoire de données de l'application"
+    "selectPlaceholder": "Sélectionner un thème",
+    "description": "Thèmes trouvés dans le répertoire de données de l'application",
+    "tabs": {
+      "myThemes": "Mes thèmes",
+      "store": "Store"
+    },
+    "store": {
+      "searchPlaceholder": "Rechercher des thèmes...",
+      "install": "Installer",
+      "installing": "Installation",
+      "installed": "Installé",
+      "by": "par",
+      "installError": "Échec de l'installation de {{name}}",
+      "loadError": "Échec du chargement du store de thèmes.",
+      "apply": "Appliquer",
+      "active": "Actif",
+      "uninstall": "Désinstaller",
+      "uninstallError": "Échec de la désinstallation de {{name}}"
+    }
   },
   "dashboard": {
     "title": "Tableau de bord",
-    "empty-state": "No dashboard data available",
-    "empty-state-description": "Enable a plugin that provides dashboard content.",
-    "top-tracks": "Top Tracks",
-    "top-artists": "Top Artists",
-    "top-albums": "Top Albums",
-    "editorial-playlists": "Top Playlists",
-    "new-releases": "New Releases",
-    "filter-artists": "Filter artists...",
-    "filter-albums": "Filter albums...",
-    "filter-playlists": "Filter playlists...",
-    "filter-releases": "Filter releases...",
-    "nothing-found": "Nothing found"
+    "empty-state": "Bienvenue sur Nuclear",
+    "empty-state-description": "Installez un plugin pour voir les pistes populaires, nouvelles sorties et recommandations ici.",
+    "empty-state-action": "Parcourir les plugins",
+    "top-tracks": "Pistes Populaires",
+    "top-artists": "Artistes Populaires",
+    "top-albums": "Albums Populaires",
+    "editorial-playlists": "Playlists Éditeurs",
+    "new-releases": "Nouvelles Sorties",
+    "filter-artists": "Filtrer les artistes...",
+    "filter-albums": "Filtrer les albums...",
+    "filter-playlists": "Filtrer les playlists...",
+    "filter-releases": "Filtrer les sorties...",
+    "nothing-found": "Rien trouvé"
   },
   "plugins": {
     "title": "Plugins",
     "addPlugin": "Ajouter un plugin",
     "tabs": {
-      "installed": "Installed",
+      "installed": "Installé",
       "store": "Store"
     },
+    "installed": {
+      "empty-state": "Aucun plugin installé",
+      "empty-state-description": "Parcourez le store de plugins pour trouver des plugins de streaming, métadonnées et autres.",
+      "empty-state-action": "Aller au store"
+    },
     "store": {
-      "searchPlaceholder": "Search plugins...",
-      "install": "Install",
-      "installing": "Installing",
-      "installed": "Installed",
-      "by": "by",
+      "searchPlaceholder": "Rechercher des plugins...",
+      "install": "Installer",
+      "installing": "Installation",
+      "installed": "Installé",
+      "by": "par",
       "categories": {
-        "all": "All",
+        "all": "Tout",
         "streaming": "Streaming",
-        "metadata": "Metadata",
-        "lyrics": "Lyrics",
+        "metadata": "Métadonnées",
+        "lyrics": "Paroles",
         "scrobbling": "Scrobbling",
-        "other": "Other"
+        "other": "Autre"
       },
       "error": {
-        "title": "Failed to load plugins",
-        "description": "Could not fetch the plugin registry. Please check your internet connection.",
-        "retry": "Retry"
+        "title": "Échec du chargement des plugins",
+        "description": "Impossible de récupérer le registre des plugins. Veuillez vérifier votre connexion internet.",
+        "retry": "Réessayer"
       },
       "noResults": {
-        "title": "No plugins found",
-        "filtered": "Try adjusting your search or filters.",
-        "empty": "No plugins available yet."
+        "title": "Aucun plugin trouvé",
+        "filtered": "Essayez d'ajuster votre recherche ou vos filtres.",
+        "empty": "Aucun plugin disponible pour le moment."
       },
       "installError": {
-        "title": "Failed to install {{name}}"
+        "title": "Échec de l'installation de {{name}}"
       }
     }
   },
   "updater": {
-    "updateAvailable": "Update available"
+    "updateAvailable": "Mise à jour disponible",
+    "clickToUpdate": "Cliquez pour mettre à jour",
+    "downloading": "Téléchargement... {{progress}}%",
+    "clickToRestart": "Cliquez pour redémarrer"
   },
   "flatpak": {
-    "sandboxWarning": "You're running Nuclear in a Flatpak sandbox. Some features may not work correctly. If you experience issues, try the .deb or AppImage instead.",
-    "dismiss": "Got it"
+    "sandboxWarning": "Vous utilisez Nuclear dans un bac à sable Flatpak. Certaines fonctionnalités peuvent ne pas fonctionner correctement. Si vous rencontrez des problèmes, essayez le .deb ou l'AppImage à la place.",
+    "dismiss": "Compris"
   },
   "preferences": {
     "title": "Preferences",
@@ -252,7 +309,11 @@
       "conflict": "This shortcut is already used by \"{{command}}\""
     },
     "appearance": {
-      "title": "Appearance"
+      "title": "Apparence",
+      "framelessWindow": {
+        "title": "Fenêtre sans cadre",
+        "description": "Masquer la barre de titre native. Faites glisser la barre supérieure pour déplacer la fenêtre."
+      }
     },
     "playback": {
       "title": "Playback",
@@ -271,6 +332,12 @@
       "streamResolutionRetries": {
         "title": "Stream resolution retries",
         "description": "Number of times to retry resolving a stream URL before moving to the next candidate"
+      },
+      "discoveryVariety": {
+        "title": "Variété de découverte",
+        "description": "Dans quelle mesure les recommandations s'éloignent de votre écoute actuelle. Plus bas c'est plus proche.",
+        "startLabel": "Moins farfelu",
+        "endLabel": "Plus farfelu"
       }
     },
     "layout": {
@@ -291,12 +358,18 @@
       "title": "Integrations",
       "mcp": {
         "enabled": {
-          "title": "Enable MCP Server",
-          "description": "Start a local MCP server that allows AI tools to control Nuclear."
+          "title": "Activer le serveur MCP",
+          "description": "Démarrer un serveur MCP local qui permet aux outils IA de contrôler Nuclear."
         },
         "serverUrl": {
-          "title": "MCP Server URL",
-          "description": "Point your AI tool to this URL to connect to Nuclear."
+          "title": "URL du serveur MCP",
+          "description": "Pointez votre outil IA vers cette URL pour vous connecter à Nuclear."
+        }
+      },
+      "discord": {
+        "enabled": {
+          "title": "Discord Rich Presence",
+          "description": "Afficher ce que vous écoutez sur votre profil Discord."
         }
       }
     }
@@ -332,7 +405,14 @@
     }
   },
   "playerBar": {
-    "noTrackPlaying": "No track playing"
+    "noTrackPlaying": "Aucune piste en lecture",
+    "shuffleOn": "Aléatoire : activé",
+    "shuffleOff": "Aléatoire : désactivé",
+    "repeatOff": "Répéter : désactivé",
+    "repeatAll": "Répéter : tout",
+    "repeatOne": "Répéter : un",
+    "discoveryOn": "Découverte : activé",
+    "discoveryOff": "Découverte : désactivé"
   },
   "logs": {
     "title": "Logs",

@@ -29,65 +29,86 @@
     "explore": "Explorar",
     "dashboard": "Painel",
     "collection": "Coleção",
-    "favoriteAlbums": "Albums favoritos",
-    "favoriteTracks": "Tracks favoritos",
+    "favoriteAlbums": "Álbuns favoritos",
+    "favoriteTracks": "Faixas favoritas",
     "favoriteArtists": "Artistas favoritos",
-    "playlists": "Playlists"
+    "playlists": "Playlists",
+    "sources": "Fontes"
+  },
+  "sources": {
+    "title": "Fontes",
+    "streaming": "Streaming",
+    "streamingDescription": "Fontes de streaming fornecem áudio. Quando você reproduz uma faixa, a fonte de streaming encontra e entrega o fluxo de áudio.",
+    "metadata": "Metadados",
+    "metadataDescription": "Fontes de metadados fornecem informações sobre artistas, álbuns e faixas. Resultados de busca, páginas de artistas e detalhes de álbuns vêm da fonte de metadados ativa.",
+    "dashboard": "Painel",
+    "dashboardDescription": "Fontes do painel fornecem conteúdo personalizado como principais faixas, novos lançamentos e recomendações na tela inicial.",
+    "playlists": "Playlists",
+    "playlistsDescription": "Fontes de playlists permitem importar playlists de serviços externos por URL.",
+    "discovery": "Descoberta",
+    "discoveryDescription": "Fontes de descoberta recomendam novas faixas com base no que você está ouvindo. Ative a descoberta de músicas usando o ícone do boombox na barra inferior.",
+    "lyrics": "Letras",
+    "lockedReason": "A fonte de metadados <metadata>{{metadataName}}</metadata> requer a fonte de streaming <streaming>{{streamingName}}</streaming>.",
+    "missingStreamingProvider": "O provedor de streaming necessário \"{{providerId}}\" não está disponível",
+    "noProviders": "Nenhum provedor instalado"
+  },
+  "discovery": {
+    "recommendationError": "Falha ao obter recomendações"
   },
   "favorites": {
     "albums": {
-      "title": "Favorite albums",
-      "empty": "No favorite albums yet",
-      "emptyDescription": "Albums you mark as favorites will appear here"
+      "title": "Álbuns favoritos",
+      "empty": "Nenhum álbum favorito ainda",
+      "emptyDescription": "Álbuns que você marcar como favoritos aparecerão aqui"
     },
     "tracks": {
-      "title": "Favorite tracks",
-      "empty": "No favorite tracks yet",
-      "emptyDescription": "Tracks you mark as favorites will appear here"
+      "title": "Faixas favoritas",
+      "empty": "Nenhuma faixa favorita ainda",
+      "emptyDescription": "Faixas que você marcar como favoritas aparecerão aqui"
     },
     "artists": {
-      "title": "Favorite artists",
-      "empty": "No favorite artists yet",
-      "emptyDescription": "Artists you mark as favorites will appear here"
+      "title": "Artistas favoritos",
+      "empty": "Nenhum artista favorito ainda",
+      "emptyDescription": "Artistas que você marcar como favoritos aparecerão aqui"
     }
   },
   "playlists": {
     "title": "Playlists",
-    "empty": "No playlists yet",
-    "emptyDescription": "Create a playlist or import one to get started",
-    "emptyTracks": "No tracks in this playlist",
-    "emptyTracksDescription": "Add tracks from search results or your library",
-    "create": "Create new",
-    "importJson": "Import from JSON",
-    "exportJson": "Export as JSON",
-    "add": "Add",
-    "delete": "Delete playlist",
-    "deleteConfirm": "Are you sure you want to delete this playlist?",
-    "play": "Play",
-    "addToQueue": "Add to queue",
-    "saveLocally": "Save locally",
+    "empty": "Nenhuma playlist ainda",
+    "emptyDescription": "Crie uma playlist ou importe uma para começar",
+    "emptyTracks": "Nenhuma faixa nesta playlist",
+    "emptyTracksDescription": "Adicione faixas dos resultados de busca ou da sua biblioteca",
+    "create": "Criar novo",
+    "importJson": "Importar de JSON",
+    "exportJson": "Exportar como JSON",
+    "add": "Adicionar",
+    "delete": "Excluir playlist",
+    "deleteConfirm": "Tem certeza de que deseja excluir esta playlist?",
+    "play": "Reproduzir",
+    "addToQueue": "Adicionar à fila",
+    "saveLocally": "Salvar localmente",
     "readOnlyBadge": "{{source}}",
-    "readOnlyTooltip": "This playlist is from {{source}} and is read-only. Save a local copy to edit it.",
-    "trackCount": "{{count}} track",
-    "trackCount_other": "{{count}} tracks",
-    "addToPlaylist": "Add to playlist",
-    "filterPlaylists": "Filter playlists...",
-    "createNew": "Create new playlist",
-    "saveQueueAsPlaylist": "Save queue as playlist",
-    "name": "Name",
-    "namePlaceholder": "Playlist name...",
-    "exportSuccess": "Playlist exported",
-    "exportError": "Failed to export playlist",
-    "importSuccess": "Playlist imported",
-    "importBatchSuccess": "{{count}} playlists imported",
-    "importError": "Failed to import playlist",
-    "importNoPlaylists": "No playlists found in this file",
-    "importUrl": "Import from URL",
-    "importUrlTitle": "Import playlist from URL",
-    "importUrlPlaceholder": "Paste a playlist URL...",
-    "importUrlNoProvider": "No plugin can handle this URL. Install a plugin that supports this service.",
-    "importUrlImporting": "Importing...",
-    "descriptionPlaceholder": "Add a description..."
+    "readOnlyTooltip": "Esta playlist é de {{source}} e é somente leitura. Salve uma cópia local para editá-la.",
+    "trackCount": "{{count}} faixa",
+    "trackCount_other": "{{count}} faixas",
+    "addToPlaylist": "Adicionar à playlist",
+    "filterPlaylists": "Filtrar playlists...",
+    "createNew": "Criar nova playlist",
+    "saveQueueAsPlaylist": "Salvar fila como playlist",
+    "name": "Nome",
+    "namePlaceholder": "Nome da playlist...",
+    "exportSuccess": "Playlist exportada",
+    "exportError": "Falha ao exportar playlist",
+    "importSuccess": "Playlist importada",
+    "importBatchSuccess": "{{count}} playlists importadas",
+    "importError": "Falha ao importar playlist",
+    "importNoPlaylists": "Nenhuma playlist encontrada neste arquivo",
+    "importUrl": "Importar de URL",
+    "importUrlTitle": "Importar playlist de URL",
+    "importUrlPlaceholder": "Cole uma URL de playlist...",
+    "importUrlNoProvider": "Nenhum plugin pode manipular esta URL. Instale um plugin que suporte este serviço.",
+    "importUrlImporting": "Importando...",
+    "descriptionPlaceholder": "Adicione uma descrição..."
   },
   "search": {
     "title": "Buscar",
@@ -97,116 +118,152 @@
     "searching": "Buscando...",
     "failedToLoad": "Falha ao carregar resultados.",
     "results": {
-      "tracks": "Tracks",
-      "albums": "Albums",
+      "tracks": "Faixas",
+      "albums": "Álbuns",
       "artists": "Artistas",
       "playlists": "Playlists"
     },
     "filters": {
       "all": "Tudo",
-      "tracks": "Tracks",
-      "albums": "Albums",
+      "tracks": "Faixas",
+      "albums": "Álbuns",
       "artists": "Artistas",
       "playlists": "Playlists"
-    }
+    },
+    "empty-state": "Nenhum plugin de metadados instalado",
+    "empty-state-description": "Instale um plugin de metadados para buscar músicas.",
+    "empty-state-action": "Explorar plugins"
   },
   "artist": {
     "title": "Artista",
-    "albums": "Albums",
-    "tracks": "Tracks",
+    "albums": "Álbuns",
+    "tracks": "Faixas",
     "similar": "Artistas similares",
-    "popularTracks": "Tracks populares",
+    "popularTracks": "Faixas populares",
     "biography": "Biografia",
     "discography": "Discografia",
-    "topTracks": "Top tracks",
+    "topTracks": "Principais faixas",
     "onTour": "Em turnê",
     "notOnTour": "Não está em turnê",
-    "followers": "Followers",
-    "followings": "Following",
+    "followers": "Seguidores",
+    "followings": "Seguindo",
     "playlists": "Playlists",
     "errors": {
       "failedToLoadDetails": "Falha ao carregar detalhes do artista.",
-      "failedToLoadAlbums": "Falha ao carregar albums.",
-      "failedToLoadPopularTracks": "Falha ao carregar tracks populares.",
+      "failedToLoadAlbums": "Falha ao carregar álbuns.",
+      "failedToLoadPopularTracks": "Falha ao carregar faixas populares.",
       "failedToLoadSimilarArtists": "Falha ao carregar artistas similares.",
-      "failedToLoadSocialStats": "Failed to load artist stats.",
-      "failedToLoadPlaylists": "Failed to load playlists."
+      "failedToLoadSocialStats": "Falha ao carregar estatísticas do artista.",
+      "failedToLoadPlaylists": "Falha ao carregar playlists."
     }
   },
   "album": {
-    "title": "Album",
-    "genre": "Genre",
-    "year": "Year",
-    "tracks": "Tracks",
+    "title": "Álbum",
+    "genre": "Gênero",
+    "year": "Ano",
+    "tracks": "Faixas",
     "errors": {
-      "failedToLoadDetails": "Failed to load album details.",
-      "failedToLoadTracks": "Failed to load tracks."
+      "failedToLoadDetails": "Falha ao carregar detalhes do álbum.",
+      "failedToLoadTracks": "Falha ao carregar faixas."
     }
   },
   "themes": {
     "title": "Temas",
     "basic": "Temas básicos",
     "advanced": "Temas avançados",
+    "marketplace": "Temas da loja",
+    "matugenTitle": "Cores Matugen",
+    "matugenDescription": "Use cores geradas pelo matugen do seu papel de parede",
+    "matugenNotInstalled": "Matugen não está instalado. Instale-o para usar cores matugen.",
+    "matugenNotInstalledHint": "Matugen gera cores do seu papel de parede. Instale com: cargo install matugen",
+    "matugenCssPath": "Caminho do CSS",
     "default": "Padrão",
-    "description": "Temas encontrados no diretório de dados do app"
+    "selectPlaceholder": "Selecione um tema",
+    "description": "Temas encontrados no diretório de dados do app",
+    "tabs": {
+      "myThemes": "Meus temas",
+      "store": "Loja"
+    },
+    "store": {
+      "searchPlaceholder": "Buscar temas...",
+      "install": "Instalar",
+      "installing": "Instalando",
+      "installed": "Instalado",
+      "by": "por",
+      "installError": "Falha ao instalar {{name}}",
+      "loadError": "Falha ao carregar a loja de temas.",
+      "apply": "Aplicar",
+      "active": "Ativo",
+      "uninstall": "Desinstalar",
+      "uninstallError": "Falha ao desinstalar {{name}}"
+    }
   },
   "dashboard": {
     "title": "Painel",
-    "empty-state": "No dashboard data available",
-    "empty-state-description": "Enable a plugin that provides dashboard content.",
-    "top-tracks": "Top Tracks",
-    "top-artists": "Top Artists",
-    "top-albums": "Top Albums",
-    "editorial-playlists": "Top Playlists",
-    "new-releases": "New Releases",
-    "filter-artists": "Filter artists...",
-    "filter-albums": "Filter albums...",
-    "filter-playlists": "Filter playlists...",
-    "filter-releases": "Filter releases...",
-    "nothing-found": "Nothing found"
+    "empty-state": "Bem-vindo ao Nuclear",
+    "empty-state-description": "Instale um plugin para ver principais faixas, novos lançamentos e recomendações aqui.",
+    "empty-state-action": "Explorar plugins",
+    "top-tracks": "Principais Faixas",
+    "top-artists": "Principais Artistas",
+    "top-albums": "Principais Álbuns",
+    "editorial-playlists": "Principais Playlists",
+    "new-releases": "Novos Lançamentos",
+    "filter-artists": "Filtrar artistas...",
+    "filter-albums": "Filtrar álbuns...",
+    "filter-playlists": "Filtrar playlists...",
+    "filter-releases": "Filtrar lançamentos...",
+    "nothing-found": "Nada encontrado"
   },
   "plugins": {
     "title": "Plugins",
     "addPlugin": "Adicionar plugin",
     "tabs": {
-      "installed": "Installed",
-      "store": "Store"
+      "installed": "Instalados",
+      "store": "Loja"
+    },
+    "installed": {
+      "empty-state": "Nenhum plugin instalado",
+      "empty-state-description": "Explore a loja de plugins para encontrar streaming, metadados e outros plugins.",
+      "empty-state-action": "Ir para loja"
     },
     "store": {
-      "searchPlaceholder": "Search plugins...",
-      "install": "Install",
-      "installing": "Installing",
-      "installed": "Installed",
-      "by": "by",
+      "searchPlaceholder": "Buscar plugins...",
+      "install": "Instalar",
+      "installing": "Instalando",
+      "installed": "Instalado",
+      "by": "por",
       "categories": {
-        "all": "All",
+        "all": "Todos",
         "streaming": "Streaming",
-        "metadata": "Metadata",
-        "lyrics": "Lyrics",
+        "metadata": "Metadados",
+        "lyrics": "Letras",
         "scrobbling": "Scrobbling",
-        "other": "Other"
+        "other": "Outros"
       },
       "error": {
-        "title": "Failed to load plugins",
-        "description": "Could not fetch the plugin registry. Please check your internet connection.",
-        "retry": "Retry"
+        "title": "Falha ao carregar plugins",
+        "description": "Não foi possível buscar o registro de plugins. Verifique sua conexão com a internet.",
+        "retry": "Tentar novamente"
       },
       "noResults": {
-        "title": "No plugins found",
-        "filtered": "Try adjusting your search or filters.",
-        "empty": "No plugins available yet."
+        "title": "Nenhum plugin encontrado",
+        "filtered": "Tente ajustar sua busca ou filtros.",
+        "empty": "Nenhum plugin disponível ainda."
       },
       "installError": {
-        "title": "Failed to install {{name}}"
+        "title": "Falha ao instalar {{name}}"
       }
     }
   },
   "updater": {
-    "updateAvailable": "Update available"
+    "updateAvailable": "Atualização disponível",
+    "clickToUpdate": "Clique para atualizar",
+    "downloading": "Baixando... {{progress}}%",
+    "clickToRestart": "Clique para reiniciar"
   },
   "flatpak": {
-    "sandboxWarning": "You're running Nuclear in a Flatpak sandbox. Some features may not work correctly. If you experience issues, try the .deb or AppImage instead.",
-    "dismiss": "Got it"
+    "sandboxWarning": "Você está executando o Nuclear em um sandbox Flatpak. Alguns recursos podem não funcionar corretamente. Se você enfrentar problemas, tente o .deb ou AppImage.",
+    "dismiss": "Entendi"
   },
   "preferences": {
     "title": "Preferences",
@@ -252,7 +309,11 @@
       "conflict": "This shortcut is already used by \"{{command}}\""
     },
     "appearance": {
-      "title": "Appearance"
+      "title": "Aparência",
+      "framelessWindow": {
+        "title": "Janela sem moldura",
+        "description": "Ocultar a barra de título nativa. Arraste a barra superior para mover a janela."
+      }
     },
     "playback": {
       "title": "Playback",
@@ -271,6 +332,12 @@
       "streamResolutionRetries": {
         "title": "Stream resolution retries",
         "description": "Number of times to retry resolving a stream URL before moving to the next candidate"
+      },
+      "discoveryVariety": {
+        "title": "Variedade de descoberta",
+        "description": "Quão distantes as recomendações ficam do que você está ouvindo. Mais baixo é mais próximo.",
+        "startLabel": "Menos radical",
+        "endLabel": "Mais radical"
       }
     },
     "layout": {
@@ -297,6 +364,12 @@
         "serverUrl": {
           "title": "MCP Server URL",
           "description": "Point your AI tool to this URL to connect to Nuclear."
+        }
+      },
+      "discord": {
+        "enabled": {
+          "title": "Discord Rich Presence",
+          "description": "Mostre o que você está ouvindo no seu perfil do Discord."
         }
       }
     }
@@ -332,7 +405,14 @@
     }
   },
   "playerBar": {
-    "noTrackPlaying": "No track playing"
+    "noTrackPlaying": "Nenhuma faixa tocando",
+    "shuffleOn": "Aleatório: ativado",
+    "shuffleOff": "Aleatório: desativado",
+    "repeatOff": "Repetir: desativado",
+    "repeatAll": "Repetir: todos",
+    "repeatOne": "Repetir: um",
+    "discoveryOn": "Descoberta: ativada",
+    "discoveryOff": "Descoberta: desativada"
   },
   "logs": {
     "title": "Logs",

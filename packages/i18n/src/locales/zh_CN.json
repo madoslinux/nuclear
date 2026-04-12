@@ -2,363 +2,443 @@
   "common": {
     "app": {
       "name": "Nuclear",
-      "description": "Free music streaming app"
+      "description": "免费音乐流媒体应用"
     },
     "actions": {
-      "save": "Save",
-      "cancel": "Cancel",
-      "delete": "Delete",
-      "edit": "Edit",
-      "close": "Close",
-      "back": "Back",
-      "next": "Next",
-      "confirm": "Confirm",
-      "apply": "Apply",
-      "reset": "Reset",
-      "clear": "Clear",
-      "search": "Search",
-      "loading": "Loading...",
-      "retry": "Retry"
+      "save": "保存",
+      "cancel": "取消",
+      "delete": "删除",
+      "edit": "编辑",
+      "close": "关闭",
+      "back": "返回",
+      "next": "下一步",
+      "confirm": "确认",
+      "apply": "应用",
+      "reset": "重置",
+      "clear": "清除",
+      "search": "搜索",
+      "loading": "加载中...",
+      "retry": "重试"
     },
     "errors": {
-      "network": "Network error. Please check your connection.",
-      "notFound": "Not found"
+      "network": "网络错误，请检查您的网络连接。",
+      "notFound": "未找到"
     }
   },
   "navigation": {
-    "explore": "Explore",
-    "dashboard": "Dashboard",
-    "collection": "Collection",
-    "favoriteAlbums": "Favorite albums",
-    "favoriteTracks": "Favorite tracks",
-    "favoriteArtists": "Favorite artists",
-    "playlists": "Playlists"
+    "explore": "探索",
+    "dashboard": "仪表盘",
+    "collection": "收藏",
+    "favoriteAlbums": "收藏专辑",
+    "favoriteTracks": "收藏曲目",
+    "favoriteArtists": "收藏艺人",
+    "playlists": "播放列表",
+    "sources": "来源"
+  },
+  "sources": {
+    "title": "来源",
+    "streaming": "流媒体",
+    "streamingDescription": "流媒体来源提供音频。当您播放曲目时，流媒体来源会找到并传递音频流。",
+    "metadata": "元数据",
+    "metadataDescription": "元数据来源提供关于艺人、专辑和曲目的信息。搜索结果、艺人页面和专辑详情来自活动的元数据来源。",
+    "dashboard": "仪表盘",
+    "dashboardDescription": "仪表盘来源在主屏幕上提供个性化内容，如热门曲目、新发行和推荐。",
+    "playlists": "播放列表",
+    "playlistsDescription": "播放列表来源让您可以通过URL从外部服务导入播放列表。",
+    "discovery": "发现",
+    "discoveryDescription": "发现来源根据您的聆听内容推荐新曲目。使用底部栏的收音机图标启用音乐发现功能。",
+    "lyrics": "歌词",
+    "lockedReason": "<metadata>{{metadataName}}</metadata> 元数据来源需要 <streaming>{{streamingName}}</streaming> 流媒体来源。",
+    "missingStreamingProvider": "所需的流媒体提供程序 \"{{providerId}}\" 不可用",
+    "noProviders": "没有安装提供程序"
+  },
+  "discovery": {
+    "recommendationError": "获取推荐失败"
   },
   "favorites": {
     "albums": {
-      "title": "Favorite albums",
-      "empty": "No favorite albums yet",
-      "emptyDescription": "Albums you mark as favorites will appear here"
+      "title": "收藏专辑",
+      "empty": "还没有收藏的专辑",
+      "emptyDescription": "您标记为收藏的专辑将显示在这里"
     },
     "tracks": {
-      "title": "Favorite tracks",
-      "empty": "No favorite tracks yet",
-      "emptyDescription": "Tracks you mark as favorites will appear here"
+      "title": "收藏曲目",
+      "empty": "还没有收藏的曲目",
+      "emptyDescription": "您标记为收藏的曲目将显示在这里"
     },
     "artists": {
-      "title": "Favorite artists",
-      "empty": "No favorite artists yet",
-      "emptyDescription": "Artists you mark as favorites will appear here"
+      "title": "收藏艺人",
+      "empty": "还没有收藏的艺人",
+      "emptyDescription": "您标记为收藏的艺人将显示在这里"
     }
   },
   "playlists": {
-    "title": "Playlists",
-    "empty": "No playlists yet",
-    "emptyDescription": "Create a playlist or import one to get started",
-    "emptyTracks": "No tracks in this playlist",
-    "emptyTracksDescription": "Add tracks from search results or your library",
-    "create": "Create new",
-    "importJson": "Import from JSON",
-    "exportJson": "Export as JSON",
-    "add": "Add",
-    "delete": "Delete playlist",
-    "deleteConfirm": "Are you sure you want to delete this playlist?",
-    "play": "Play",
-    "addToQueue": "Add to queue",
-    "saveLocally": "Save locally",
+    "title": "播放列表",
+    "empty": "还没有播放列表",
+    "emptyDescription": "创建一个播放列表或导入一个开始使用",
+    "emptyTracks": "此播放列表中没有曲目",
+    "emptyTracksDescription": "从搜索结果或您的音乐库添加曲目",
+    "create": "创建新列表",
+    "importJson": "从 JSON 导入",
+    "exportJson": "导出为 JSON",
+    "add": "添加",
+    "delete": "删除播放列表",
+    "deleteConfirm": "您确定要删除此播放列表吗？",
+    "play": "播放",
+    "addToQueue": "添加到队列",
+    "saveLocally": "本地保存",
     "readOnlyBadge": "{{source}}",
-    "readOnlyTooltip": "This playlist is from {{source}} and is read-only. Save a local copy to edit it.",
-    "trackCount": "{{count}} track",
-    "trackCount_other": "{{count}} tracks",
-    "addToPlaylist": "Add to playlist",
-    "filterPlaylists": "Filter playlists...",
-    "createNew": "Create new playlist",
-    "saveQueueAsPlaylist": "Save queue as playlist",
-    "name": "Name",
-    "namePlaceholder": "Playlist name...",
-    "exportSuccess": "Playlist exported",
-    "exportError": "Failed to export playlist",
-    "importSuccess": "Playlist imported",
-    "importBatchSuccess": "{{count}} playlists imported",
-    "importError": "Failed to import playlist",
-    "importNoPlaylists": "No playlists found in this file",
-    "importUrl": "Import from URL",
-    "importUrlTitle": "Import playlist from URL",
-    "importUrlPlaceholder": "Paste a playlist URL...",
-    "importUrlNoProvider": "No plugin can handle this URL. Install a plugin that supports this service.",
-    "importUrlImporting": "Importing...",
-    "descriptionPlaceholder": "Add a description..."
+    "readOnlyTooltip": "此播放列表来自 {{source}}，是只读的。保存本地副本以进行编辑。",
+    "trackCount": "{{count}} 首曲目",
+    "trackCount_other": "{{count}} 首曲目",
+    "addToPlaylist": "添加到播放列表",
+    "filterPlaylists": "筛选播放列表...",
+    "createNew": "创建新播放列表",
+    "saveQueueAsPlaylist": "将队列保存为播放列表",
+    "name": "名称",
+    "namePlaceholder": "播放列表名称...",
+    "exportSuccess": "播放列表已导出",
+    "exportError": "导出播放列表失败",
+    "importSuccess": "播放列表已导入",
+    "importBatchSuccess": "已导入 {{count}} 个播放列表",
+    "importError": "导入播放列表失败",
+    "importNoPlaylists": "在此文件中未找到播放列表",
+    "importUrl": "从 URL 导入",
+    "importUrlTitle": "从 URL 导入播放列表",
+    "importUrlPlaceholder": "粘贴播放列表 URL...",
+    "importUrlNoProvider": "没有插件可以处理此 URL。安装支持此服务的插件。",
+    "importUrlImporting": "正在导入...",
+    "descriptionPlaceholder": "添加描述..."
   },
   "search": {
-    "title": "Search",
-    "query": "Query",
-    "placeholder": "Search",
-    "noResults": "No results found",
-    "searching": "Searching...",
-    "failedToLoad": "Failed to load results.",
+    "title": "搜索",
+    "query": "查询",
+    "placeholder": "搜索",
+    "noResults": "未找到结果",
+    "searching": "搜索中...",
+    "failedToLoad": "加载结果失败。",
     "results": {
-      "tracks": "Tracks",
-      "albums": "Albums",
-      "artists": "Artists",
-      "playlists": "Playlists"
+      "tracks": "曲目",
+      "albums": "专辑",
+      "artists": "艺人",
+      "playlists": "播放列表"
     },
     "filters": {
-      "all": "All",
-      "tracks": "Tracks",
-      "albums": "Albums",
-      "artists": "Artists",
-      "playlists": "Playlists"
-    }
+      "all": "全部",
+      "tracks": "曲目",
+      "albums": "专辑",
+      "artists": "艺人",
+      "playlists": "播放列表"
+    },
+    "empty-state": "未安装元数据插件",
+    "empty-state-description": "安装元数据插件以搜索音乐。",
+    "empty-state-action": "浏览插件"
   },
   "artist": {
-    "title": "Artist",
-    "albums": "Albums",
-    "tracks": "Tracks",
-    "similar": "Similar artists",
-    "popularTracks": "Popular tracks",
+    "title": "艺人",
+    "albums": "专辑",
+    "tracks": "曲目",
+    "similar": "相似艺人",
+    "popularTracks": "热门曲目",
     "biography": "Biography",
-    "discography": "Discography",
-    "topTracks": "Top tracks",
-    "onTour": "On Tour",
-    "notOnTour": "Not on Tour",
-    "followers": "Followers",
-    "followings": "Following",
-    "playlists": "Playlists",
+    "discography": "唱片目录",
+    "topTracks": "热门曲目",
+    "onTour": "正在巡演",
+    "notOnTour": "未在巡演",
+    "followers": "粉丝",
+    "followings": "关注",
+    "playlists": "播放列表",
     "errors": {
-      "failedToLoadDetails": "Failed to load artist details.",
-      "failedToLoadAlbums": "Failed to load albums.",
-      "failedToLoadPopularTracks": "Failed to load popular tracks.",
-      "failedToLoadSimilarArtists": "Failed to load similar artists.",
-      "failedToLoadSocialStats": "Failed to load artist stats.",
-      "failedToLoadPlaylists": "Failed to load playlists."
+      "failedToLoadDetails": "加载艺人详情失败。",
+      "failedToLoadAlbums": "加载专辑失败。",
+      "failedToLoadPopularTracks": "加载热门曲目失败。",
+      "failedToLoadSimilarArtists": "加载相似艺人失败。",
+      "failedToLoadSocialStats": "加载艺人统计失败。",
+      "failedToLoadPlaylists": "加载播放列表失败。"
     }
   },
   "album": {
-    "title": "Album",
-    "genre": "Genre",
-    "year": "Year",
-    "tracks": "Tracks",
+    "title": "专辑",
+    "genre": "流派",
+    "year": "年份",
+    "tracks": "曲目",
     "errors": {
-      "failedToLoadDetails": "Failed to load album details.",
-      "failedToLoadTracks": "Failed to load tracks."
+      "failedToLoadDetails": "加载专辑详情失败。",
+      "failedToLoadTracks": "加载曲目失败。"
     }
   },
   "themes": {
-    "title": "Themes",
-    "basic": "Basic themes",
-    "advanced": "Advanced themes",
-    "default": "Default",
-    "description": "Themes found in your app data themes directory"
-  },
-  "dashboard": {
-    "title": "Dashboard",
-    "empty-state": "No dashboard data available",
-    "empty-state-description": "Enable a plugin that provides dashboard content.",
-    "top-tracks": "Top Tracks",
-    "top-artists": "Top Artists",
-    "top-albums": "Top Albums",
-    "editorial-playlists": "Top Playlists",
-    "new-releases": "New Releases",
-    "filter-artists": "Filter artists...",
-    "filter-albums": "Filter albums...",
-    "filter-playlists": "Filter playlists...",
-    "filter-releases": "Filter releases...",
-    "nothing-found": "Nothing found"
-  },
-  "plugins": {
-    "title": "Plugins",
-    "addPlugin": "Add Plugin",
+    "title": "主题",
+    "basic": "基础主题",
+    "advanced": "高级主题",
+    "marketplace": "主题商店",
+    "matugenTitle": "Matugen 颜色",
+    "matugenDescription": "使用从壁纸生成的 matugen 颜色",
+    "matugenNotInstalled": "Matugen 未安装。安装以使用 matugen 颜色。",
+    "matugenNotInstalledHint": "Matugen 从壁纸生成颜色。使用以下命令安装：cargo install matugen",
+    "matugenCssPath": "CSS 路径",
+    "default": "默认",
+    "selectPlaceholder": "选择主题",
+    "description": "在应用数据主题目录中找到的主题",
     "tabs": {
-      "installed": "Installed",
-      "store": "Store"
+      "myThemes": "我的主题",
+      "store": "商店"
     },
     "store": {
-      "searchPlaceholder": "Search plugins...",
-      "install": "Install",
-      "installing": "Installing",
-      "installed": "Installed",
-      "by": "by",
+      "searchPlaceholder": "搜索主题...",
+      "install": "安装",
+      "installing": "正在安装",
+      "installed": "已安装",
+      "by": "作者：",
+      "installError": "安装 {{name}} 失败",
+      "loadError": "加载主题商店失败。",
+      "apply": "应用",
+      "active": "已启用",
+      "uninstall": "卸载",
+      "uninstallError": "卸载 {{name}} 失败"
+    }
+  },
+  "dashboard": {
+    "title": "仪表盘",
+    "empty-state": "欢迎使用 Nuclear",
+    "empty-state-description": "安装插件以在此处查看热门曲目、新发行和推荐。",
+    "empty-state-action": "浏览插件",
+    "top-tracks": "热门曲目",
+    "top-artists": "热门艺人",
+    "top-albums": "热门专辑",
+    "editorial-playlists": "精选播放列表",
+    "new-releases": "新发行",
+    "filter-artists": "筛选艺人...",
+    "filter-albums": "筛选专辑...",
+    "filter-playlists": "筛选播放列表...",
+    "filter-releases": "筛选发行...",
+    "nothing-found": "未找到任何内容"
+  },
+  "plugins": {
+    "title": "插件",
+    "addPlugin": "添加插件",
+    "tabs": {
+      "installed": "已安装",
+      "store": "商店"
+    },
+    "installed": {
+      "empty-state": "没有安装插件",
+      "empty-state-description": "浏览插件商店以查找流媒体、元数据和其他插件。",
+      "empty-state-action": "前往商店"
+    },
+    "store": {
+      "searchPlaceholder": "搜索插件...",
+      "install": "安装",
+      "installing": "正在安装",
+      "installed": "已安装",
+      "by": "作者：",
       "categories": {
-        "all": "All",
-        "streaming": "Streaming",
-        "metadata": "Metadata",
-        "lyrics": "Lyrics",
-        "scrobbling": "Scrobbling",
-        "other": "Other"
+        "all": "全部",
+        "streaming": "流媒体",
+        "metadata": "元数据",
+        "lyrics": "歌词",
+        "scrobbling": "音乐记录",
+        "other": "其他"
       },
       "error": {
-        "title": "Failed to load plugins",
-        "description": "Could not fetch the plugin registry. Please check your internet connection.",
-        "retry": "Retry"
+        "title": "加载插件失败",
+        "description": "无法获取插件注册表。请检查您的网络连接。",
+        "retry": "重试"
       },
       "noResults": {
-        "title": "No plugins found",
-        "filtered": "Try adjusting your search or filters.",
-        "empty": "No plugins available yet."
+        "title": "未找到插件",
+        "filtered": "尝试调整搜索或筛选条件。",
+        "empty": "暂无可用插件。"
       },
       "installError": {
-        "title": "Failed to install {{name}}"
+        "title": "安装 {{name}} 失败"
       }
     }
   },
   "updater": {
-    "updateAvailable": "Update available"
+    "updateAvailable": "有可用更新",
+    "clickToUpdate": "点击更新",
+    "downloading": "下载中... {{progress}}%",
+    "clickToRestart": "点击重启"
   },
   "flatpak": {
-    "sandboxWarning": "You're running Nuclear in a Flatpak sandbox. Some features may not work correctly. If you experience issues, try the .deb or AppImage instead.",
-    "dismiss": "Got it"
+    "sandboxWarning": "您正在 Flatpak 沙箱中运行 Nuclear。某些功能可能无法正常工作。如果遇到问题，请尝试 .deb 或 AppImage 版本。",
+    "dismiss": "知道了"
   },
   "preferences": {
-    "title": "Preferences",
+    "title": "偏好设置",
     "general": {
-      "title": "General",
+      "title": "通用",
       "language": {
-        "title": "Language",
-        "description": "Select your preferred language"
+        "title": "语言",
+        "description": "选择您的首选语言"
       }
     },
     "plugins": {
-      "title": "Plugins"
+      "title": "插件"
     },
     "themes": {
-      "title": "Themes"
+      "title": "主题"
     },
     "logs": {
-      "title": "Logs"
+      "title": "日志"
     },
     "whats-new": {
-      "title": "What's New"
+      "title": "新增内容"
     },
     "shortcuts": {
-      "title": "Key Shortcuts",
+      "title": "快捷键",
       "sections": {
-        "playback": "Playback",
-        "general": "General"
+        "playback": "播放",
+        "general": "通用"
       },
       "commands": {
-        "playback.toggle": "Play / Pause",
-        "playback.next": "Next track",
-        "playback.previous": "Previous track",
-        "playback.seekForward": "Seek forward",
-        "playback.seekBackward": "Seek backward",
-        "playback.volumeUp": "Volume up",
-        "playback.volumeDown": "Volume down",
-        "playback.mute": "Mute / Unmute",
-        "general.toggleSettings": "Open settings"
+        "playback.toggle": "播放 / 暂停",
+        "playback.next": "下一曲",
+        "playback.previous": "上一曲",
+        "playback.seekForward": "快进",
+        "playback.seekBackward": "快退",
+        "playback.volumeUp": "增大音量",
+        "playback.volumeDown": "减小音量",
+        "playback.mute": "静音 / 取消静音",
+        "general.toggleSettings": "打开设置"
       },
-      "recording": "Press a key combination...",
-      "resetAll": "Reset all to defaults",
-      "reset": "Reset",
-      "conflict": "This shortcut is already used by \"{{command}}\""
+      "recording": "按下按键组合...",
+      "resetAll": "重置为默认值",
+      "reset": "重置",
+      "conflict": "此快捷键已被 \"{{command}}\" 使用"
     },
     "appearance": {
-      "title": "Appearance"
+      "title": "外观",
+      "framelessWindow": {
+        "title": "无边框窗口",
+        "description": "隐藏原生标题栏。拖动顶部栏以移动窗口。"
+      }
     },
     "playback": {
-      "title": "Playback",
+      "title": "播放",
       "skipSeconds": {
-        "title": "Skip duration",
-        "description": "Number of seconds to skip forward/backward"
+        "title": "跳过时长",
+        "description": "向前/向后跳过的秒数"
       },
       "crossfadeMs": {
-        "title": "Crossfade",
-        "description": "Crossfade duration between tracks in milliseconds"
+        "title": "交叉淡入淡出",
+        "description": "曲目之间交叉淡入淡出的持续时间（毫秒）"
       },
       "streamExpiryMs": {
-        "title": "Stream expiry time",
-        "description": "How long before a resolved stream URL is considered expired and needs re-resolution"
+        "title": "流过期时间",
+        "description": "解析后的流 URL 在被认为过期并需要重新解析之前的时间"
       },
       "streamResolutionRetries": {
-        "title": "Stream resolution retries",
-        "description": "Number of times to retry resolving a stream URL before moving to the next candidate"
+        "title": "流解析重试次数",
+        "description": "在移动到下一个候选之前重试解析流 URL 的次数"
+      },
+      "discoveryVariety": {
+        "title": "发现多样性",
+        "description": "推荐与您当前听歌内容的偏离程度。越低越接近。",
+        "startLabel": "较少变化",
+        "endLabel": "更多变化"
       }
     },
     "layout": {
-      "title": "Layout"
+      "title": "布局"
     },
     "updates": {
-      "title": "Updates",
+      "title": "更新",
       "checkForUpdates": {
-        "title": "Check for updates",
-        "description": "Automatically check for new versions on startup"
+        "title": "检查更新",
+        "description": "启动时自动检查新版本"
       },
       "autoInstall": {
-        "title": "Auto-install updates",
-        "description": "Download and install updates automatically when available"
+        "title": "自动安装更新",
+        "description": "有可用更新时自动下载和安装"
       }
     },
     "integrations": {
-      "title": "Integrations",
+      "title": "集成",
       "mcp": {
         "enabled": {
-          "title": "Enable MCP Server",
-          "description": "Start a local MCP server that allows AI tools to control Nuclear."
+          "title": "启用 MCP 服务器",
+          "description": "启动本地 MCP 服务器，允许 AI 工具控制 Nuclear。"
         },
         "serverUrl": {
-          "title": "MCP Server URL",
-          "description": "Point your AI tool to this URL to connect to Nuclear."
+          "title": "MCP 服务器 URL",
+          "description": "将您的 AI 工具指向此 URL 以连接到 Nuclear。"
+        }
+      },
+      "discord": {
+        "enabled": {
+          "title": "Discord Rich Presence",
+          "description": "在您的 Discord 个人资料上显示您正在收听的内容。"
         }
       }
     }
   },
   "queue": {
-    "title": "Queue",
+    "title": "队列",
     "empty": {
-      "title": "Queue is empty",
-      "subtitle": "Add tracks to start playing"
+      "title": "队列为空",
+      "subtitle": "添加曲目开始播放"
     },
     "actions": {
-      "remove": "Remove from queue",
-      "clear": "Clear queue",
-      "saveAsPlaylist": "Save queue as playlist"
+      "remove": "从队列中移除",
+      "clear": "清空队列",
+      "saveAsPlaylist": "将队列保存为播放列表"
     },
     "errors": {
-      "playback": "Playback error"
+      "playback": "播放错误"
     }
   },
   "track": {
     "actions": {
-      "playNow": "Play now",
-      "playNext": "Play next",
-      "addToQueue": "Add to queue",
-      "addToFavorites": "Add to favorites",
-      "removeFromFavorites": "Remove from favorites"
+      "playNow": "立即播放",
+      "playNext": "下一首播放",
+      "addToQueue": "添加到队列",
+      "addToFavorites": "添加到收藏",
+      "removeFromFavorites": "从收藏中移除"
     }
   },
   "streaming": {
     "errors": {
-      "noCandidatesFound": "Failed to find stream candidates",
-      "allCandidatesFailed": "All stream candidates failed"
+      "noCandidatesFound": "未找到流候选",
+      "allCandidatesFailed": "所有流候选均失败"
     }
   },
   "playerBar": {
-    "noTrackPlaying": "No track playing"
+    "noTrackPlaying": "没有正在播放的曲目",
+    "shuffleOn": "随机播放：开",
+    "shuffleOff": "随机播放：关",
+    "repeatOff": "循环播放：关闭",
+    "repeatAll": "循环播放：全部",
+    "repeatOne": "循环播放：单曲",
+    "discoveryOn": "发现：开",
+    "discoveryOff": "发现：关"
   },
   "logs": {
-    "title": "Logs",
-    "searchPlaceholder": "Search logs...",
-    "searchAriaLabel": "Search logs",
-    "levelLabel": "Level:",
-    "scopeLabel": "Scope:",
-    "clearButton": "Clear",
-    "exportButton": "Export",
-    "openLogFolderButton": "Open Log Folder",
-    "noLogsMessage": "No logs to display",
-    "invalidRegexMessage": "Invalid regex pattern",
-    "entryCount": "{{count}} entry",
-    "entryCount_other": "{{count}} entries",
-    "exportSuccess": "Logs exported"
+    "title": "日志",
+    "searchPlaceholder": "搜索日志...",
+    "searchAriaLabel": "搜索日志",
+    "levelLabel": "级别：",
+    "scopeLabel": "范围：",
+    "clearButton": "清除",
+    "exportButton": "导出",
+    "openLogFolderButton": "打开日志文件夹",
+    "noLogsMessage": "没有日志可显示",
+    "invalidRegexMessage": "无效的正则表达式",
+    "entryCount": "{{count}} 条记录",
+    "entryCount_other": "{{count}} 条记录",
+    "exportSuccess": "日志已导出"
   },
   "changelog": {
-    "title": "What's New",
-    "seeMore": "See more ({{count}} older)",
+    "title": "新增内容",
+    "seeMore": "查看更多（{{count}} 条更早）",
     "types": {
-      "feature": "Feature",
-      "fix": "Fix",
-      "improvement": "Improvement",
-      "chore": "Chore",
-      "plugin": "Plugin",
-      "docs": "Docs"
+      "feature": "新功能",
+      "fix": "修复",
+      "improvement": "改进",
+      "chore": "维护",
+      "plugin": "插件",
+      "docs": "文档"
     }
   }
 }

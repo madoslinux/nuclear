@@ -32,7 +32,28 @@
     "favoriteAlbums": "Albums preferiti",
     "favoriteTracks": "Tracks preferiti",
     "favoriteArtists": "Artisti preferiti",
-    "playlists": "Scalette"
+    "playlists": "Scalette",
+    "sources": "Fonti"
+  },
+  "sources": {
+    "title": "Fonti",
+    "streaming": "Streaming",
+    "streamingDescription": "Le fonti di streaming forniscono l'audio. Quando riproduci un brano, la fonte di streaming trova e distribuisce il flusso audio.",
+    "metadata": "Metadati",
+    "metadataDescription": "Le fonti di metadati forniscono informazioni su artisti, album e brani. I risultati di ricerca, le pagine degli artisti e i dettagli degli album provengono dalla fonte di metadati attiva.",
+    "dashboard": "Dashboard",
+    "dashboardDescription": "Le fonti della dashboard forniscono contenuti personalizzati come brani in evidenza, nuove pubblicazioni e raccomandazioni nella schermata principale.",
+    "playlists": "Scalette",
+    "playlistsDescription": "Le fonti delle scalette ti permettono di importare scalette da servizi esterni tramite URL.",
+    "discovery": "Scoperta",
+    "discoveryDescription": "Le fonti di scoperta raccomandano nuovi brani in base a ciò che stai ascoltando. Abilita la scoperta musicale usando l'icona della radio nella barra in basso.",
+    "lyrics": "Testi",
+    "lockedReason": "La fonte di metadati <metadata>{{metadataName}}</metadata> richiede la fonte di streaming <streaming>{{streamingName}}</streaming>.",
+    "missingStreamingProvider": "Il provider di streaming richiesto \"{{providerId}}\" non è disponibile",
+    "noProviders": "Nessun provider installato"
+  },
+  "discovery": {
+    "recommendationError": "Impossibile ottenere raccomandazioni"
   },
   "favorites": {
     "albums": {
@@ -108,7 +129,10 @@
       "albums": "Albums",
       "artists": "Artisti",
       "playlists": "Playlists"
-    }
+    },
+    "empty-state": "Nessun plugin di metadati installato",
+    "empty-state-description": "Installa un plugin di metadati per cercare musica.",
+    "empty-state-action": "Sfoglia plugin"
   },
   "artist": {
     "title": "Artista",
@@ -147,13 +171,38 @@
     "title": "Temi",
     "basic": "Temi base",
     "advanced": "Temi avanzati",
+    "marketplace": "Temi del negozio",
+    "matugenTitle": "Colori Matugen",
+    "matugenDescription": "Usa i colori generati da matugen dal tuo sfondo",
+    "matugenNotInstalled": "Matugen non è installato. Installalo per usare i colori matugen.",
+    "matugenNotInstalledHint": "Matugen genera colori dal tuo sfondo. Installalo con: cargo install matugen",
+    "matugenCssPath": "Percorso CSS",
     "default": "Predefinito",
-    "description": "Temi trovati nella directory dei dati dell'app"
+    "selectPlaceholder": "Seleziona un tema",
+    "description": "Temi trovati nella directory dei temi dei dati dell'app",
+    "tabs": {
+      "myThemes": "I miei temi",
+      "store": "Negozio"
+    },
+    "store": {
+      "searchPlaceholder": "Cerca temi...",
+      "install": "Installa",
+      "installing": "Installazione",
+      "installed": "Installato",
+      "by": "da",
+      "installError": "Impossibile installare {{name}}",
+      "loadError": "Impossibile caricare il negozio dei temi.",
+      "apply": "Applica",
+      "active": "Attivo",
+      "uninstall": "Disinstalla",
+      "uninstallError": "Impossibile disinstallare {{name}}"
+    }
   },
   "dashboard": {
     "title": "Dashboard",
-    "empty-state": "Nessun dato dashboard disponibile",
-    "empty-state-description": "Abilita un'estensione che fornisce contenuto dashboard.",
+    "empty-state": "Benvenuto in Nuclear",
+    "empty-state-description": "Installa un'estensione per vedere brani in evidenza, nuove pubblicazioni e raccomandazioni qui.",
+    "empty-state-action": "Sfoglia estensioni",
     "top-tracks": "Brani in evidenza",
     "top-artists": "Artisti in evidenza",
     "top-albums": "Album in evidenza",
@@ -171,6 +220,11 @@
     "tabs": {
       "installed": "Installato",
       "store": "Negozio"
+    },
+    "installed": {
+      "empty-state": "Nessuna estensione installata",
+      "empty-state-description": "Sfoglia il negozio delle estensioni per trovare streaming, metadati e altre estensioni.",
+      "empty-state-action": "Vai al negozio"
     },
     "store": {
       "searchPlaceholder": "Cerca estensione...",
@@ -202,7 +256,10 @@
     }
   },
   "updater": {
-    "updateAvailable": "Aggiornamento disponibile"
+    "updateAvailable": "Aggiornamento disponibile",
+    "clickToUpdate": "Clicca per aggiornare",
+    "downloading": "Download... {{progress}}%",
+    "clickToRestart": "Clicca per riavviare"
   },
   "flatpak": {
     "sandboxWarning": "Stai eseguendo Nuclear in una sandbox Flatpak. Alcune funzionalità potrebbero non funzionare correttamente. Se riscontri problemi, prova invece il file .deb o Appimage.",
@@ -252,7 +309,11 @@
       "conflict": "Questa scorciatoia è già utilizzata da “{{command}}”"
     },
     "appearance": {
-      "title": "Aspetto"
+      "title": "Aspetto",
+      "framelessWindow": {
+        "title": "Finestra senza bordi",
+        "description": "Nascondi la barra del titolo nativa. Trascina la barra superiore per spostare la finestra."
+      }
     },
     "playback": {
       "title": "Riproduzione",
@@ -271,6 +332,12 @@
       "streamResolutionRetries": {
         "title": "Riprova risoluzione flusso",
         "description": "Numero di tentativi di risoluzione di un URL di flusso prima di passare al candidato successivo"
+      },
+      "discoveryVariety": {
+        "title": "Varietà scoperta",
+        "description": "Quanto le raccomandazioni si discostano dall'ascolto attuale. Più basso è più simile.",
+        "startLabel": "Meno spinto",
+        "endLabel": "Più spinto"
       }
     },
     "layout": {
@@ -297,6 +364,12 @@
         "serverUrl": {
           "title": "URL Server MCP",
           "description": "Indirizza il tuo strumento di AI a questo URL per collegarti a Nuclear."
+        }
+      },
+      "discord": {
+        "enabled": {
+          "title": "Discord Rich Presence",
+          "description": "Mostra cosa stai ascoltando sul tuo profilo Discord."
         }
       }
     }
@@ -332,7 +405,14 @@
     }
   },
   "playerBar": {
-    "noTrackPlaying": "Nessuna traccia in riproduzione"
+    "noTrackPlaying": "Nessuna traccia in riproduzione",
+    "shuffleOn": "Casuale: attivo",
+    "shuffleOff": "Casuale: disattivo",
+    "repeatOff": "Ripetizione: disattiva",
+    "repeatAll": "Ripetizione: tutti",
+    "repeatOne": "Ripetizione: uno",
+    "discoveryOn": "Scoperta: attiva",
+    "discoveryOff": "Scoperta: disattiva"
   },
   "logs": {
     "title": "Registri",

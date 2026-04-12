@@ -32,62 +32,83 @@
     "favoriteAlbums": "Lieblingsalben",
     "favoriteTracks": "Lieblingstitel",
     "favoriteArtists": "Lieblingskünstler",
-    "playlists": "Playlists"
+    "playlists": "Playlists",
+    "sources": "Quellen"
+  },
+  "sources": {
+    "title": "Quellen",
+    "streaming": "Streaming",
+    "streamingDescription": "Streaming-Quellen liefern Audio. Wenn Sie einen Titel abspielen, findet die Streaming-Quelle den Audiostream und liefert ihn.",
+    "metadata": "Metadaten",
+    "metadataDescription": "Metadaten-Quellen liefern Informationen über Künstler, Alben und Titel. Suchergebnisse, Künstler-Seiten und Album-Details stammen von der aktiven Metadaten-Quelle.",
+    "dashboard": "Dashboard",
+    "dashboardDescription": "Dashboard-Quellen liefern personalisierte Inhalte wie Top-Titel, Neuerscheinungen und Empfehlungen auf dem Startbildschirm.",
+    "playlists": "Playlists",
+    "playlistsDescription": "Playlist-Quellen ermöglichen es, Playlists von externen Diensten per URL zu importieren.",
+    "discovery": "Entdecken",
+    "discoveryDescription": "Entdecken-Quellen empfehlen neue Titel basierend auf dem, was Sie hören. Aktivieren Sie die Musikentdeckung über das Boombox-Symbol in der unteren Leiste.",
+    "lyrics": "Liedtexte",
+    "lockedReason": "<metadata>{{metadataName}}</metadata> Metadatenquelle benötigt <streaming>{{streamingName}}</streaming> Streaming-Quelle.",
+    "missingStreamingProvider": "Erforderlicher Streaming-Anbieter \"{{providerId}}\" ist nicht verfügbar",
+    "noProviders": "Keine Anbieter installiert"
+  },
+  "discovery": {
+    "recommendationError": "Empfehlungen konnten nicht geladen werden"
   },
   "favorites": {
     "albums": {
-      "title": "Favorite albums",
-      "empty": "No favorite albums yet",
-      "emptyDescription": "Albums you mark as favorites will appear here"
+      "title": "Lieblingsalben",
+      "empty": "Noch keine Lieblingsalben",
+      "emptyDescription": "Alben, die Sie als Favoriten markieren, erscheinen hier"
     },
     "tracks": {
-      "title": "Favorite tracks",
-      "empty": "No favorite tracks yet",
-      "emptyDescription": "Tracks you mark as favorites will appear here"
+      "title": "Lieblingstitel",
+      "empty": "Noch keine Lieblingstitel",
+      "emptyDescription": "Titel, die Sie als Favoriten markieren, erscheinen hier"
     },
     "artists": {
-      "title": "Favorite artists",
-      "empty": "No favorite artists yet",
-      "emptyDescription": "Artists you mark as favorites will appear here"
+      "title": "Lieblingskünstler",
+      "empty": "Noch keine Lieblingskünstler",
+      "emptyDescription": "Künstler, die Sie als Favoriten markieren, erscheinen hier"
     }
   },
   "playlists": {
     "title": "Playlists",
-    "empty": "No playlists yet",
-    "emptyDescription": "Create a playlist or import one to get started",
-    "emptyTracks": "No tracks in this playlist",
-    "emptyTracksDescription": "Add tracks from search results or your library",
-    "create": "Create new",
-    "importJson": "Import from JSON",
-    "exportJson": "Export as JSON",
-    "add": "Add",
-    "delete": "Delete playlist",
-    "deleteConfirm": "Are you sure you want to delete this playlist?",
-    "play": "Play",
-    "addToQueue": "Add to queue",
-    "saveLocally": "Save locally",
+    "empty": "Noch keine Playlists",
+    "emptyDescription": "Erstellen Sie eine Playlist oder importieren Sie eine, um zu beginnen",
+    "emptyTracks": "Keine Titel in dieser Playlist",
+    "emptyTracksDescription": "Fügen Sie Titel aus Suchergebnissen oder Ihrer Bibliothek hinzu",
+    "create": "Neu erstellen",
+    "importJson": "Aus JSON importieren",
+    "exportJson": "Als JSON exportieren",
+    "add": "Hinzufügen",
+    "delete": "Playlist löschen",
+    "deleteConfirm": "Sind Sie sicher, dass Sie diese Playlist löschen möchten?",
+    "play": "Abspielen",
+    "addToQueue": "Zur Warteschlange hinzufügen",
+    "saveLocally": "Lokal speichern",
     "readOnlyBadge": "{{source}}",
-    "readOnlyTooltip": "This playlist is from {{source}} and is read-only. Save a local copy to edit it.",
-    "trackCount": "{{count}} track",
-    "trackCount_other": "{{count}} tracks",
-    "addToPlaylist": "Add to playlist",
-    "filterPlaylists": "Filter playlists...",
-    "createNew": "Create new playlist",
-    "saveQueueAsPlaylist": "Save queue as playlist",
+    "readOnlyTooltip": "Diese Playlist stammt von {{source}} und ist schreibgeschützt. Speichern Sie eine lokale Kopie, um sie zu bearbeiten.",
+    "trackCount": "{{count}} Titel",
+    "trackCount_other": "{{count}} Titel",
+    "addToPlaylist": "Zur Playlist hinzufügen",
+    "filterPlaylists": "Playlists filtern...",
+    "createNew": "Neue Playlist erstellen",
+    "saveQueueAsPlaylist": "Warteschlange als Playlist speichern",
     "name": "Name",
-    "namePlaceholder": "Playlist name...",
-    "exportSuccess": "Playlist exported",
-    "exportError": "Failed to export playlist",
-    "importSuccess": "Playlist imported",
-    "importBatchSuccess": "{{count}} playlists imported",
-    "importError": "Failed to import playlist",
-    "importNoPlaylists": "No playlists found in this file",
-    "importUrl": "Import from URL",
-    "importUrlTitle": "Import playlist from URL",
-    "importUrlPlaceholder": "Paste a playlist URL...",
-    "importUrlNoProvider": "No plugin can handle this URL. Install a plugin that supports this service.",
-    "importUrlImporting": "Importing...",
-    "descriptionPlaceholder": "Add a description..."
+    "namePlaceholder": "Playlist-Name...",
+    "exportSuccess": "Playlist exportiert",
+    "exportError": "Playlist konnte nicht exportiert werden",
+    "importSuccess": "Playlist importiert",
+    "importBatchSuccess": "{{count}} Playlists importiert",
+    "importError": "Playlist konnte nicht importiert werden",
+    "importNoPlaylists": "Keine Playlists in dieser Datei gefunden",
+    "importUrl": "Von URL importieren",
+    "importUrlTitle": "Playlist von URL importieren",
+    "importUrlPlaceholder": "Playlist-URL einfügen...",
+    "importUrlNoProvider": "Kein Plugin kann diese URL verarbeiten. Installieren Sie ein Plugin, das diesen Dienst unterstützt.",
+    "importUrlImporting": "Importiere...",
+    "descriptionPlaceholder": "Beschreibung hinzufügen..."
   },
   "search": {
     "title": "Suche",
@@ -108,7 +129,10 @@
       "albums": "Alben",
       "artists": "Künstler",
       "playlists": "Playlists"
-    }
+    },
+    "empty-state": "Kein Metadaten-Plugin installiert",
+    "empty-state-description": "Installieren Sie ein Metadaten-Plugin, um nach Musik zu suchen.",
+    "empty-state-action": "Plugins durchsuchen"
   },
   "artist": {
     "title": "Künstler",
@@ -121,100 +145,133 @@
     "topTracks": "Top-Titel",
     "onTour": "Auf Tour",
     "notOnTour": "Nicht auf Tour",
-    "followers": "Followers",
-    "followings": "Following",
+    "followers": "Follower",
+    "followings": "Folge ich",
     "playlists": "Playlists",
     "errors": {
       "failedToLoadDetails": "Künstlerdetails konnten nicht geladen werden.",
       "failedToLoadAlbums": "Alben konnten nicht geladen werden.",
       "failedToLoadPopularTracks": "Beliebte Titel konnten nicht geladen werden.",
       "failedToLoadSimilarArtists": "Ähnliche Künstler konnten nicht geladen werden.",
-      "failedToLoadSocialStats": "Failed to load artist stats.",
-      "failedToLoadPlaylists": "Failed to load playlists."
+      "failedToLoadSocialStats": "Künstlerstatistiken konnten nicht geladen werden.",
+      "failedToLoadPlaylists": "Playlists konnten nicht geladen werden."
     }
   },
   "album": {
     "title": "Album",
     "genre": "Genre",
-    "year": "Year",
-    "tracks": "Tracks",
+    "year": "Jahr",
+    "tracks": "Titel",
     "errors": {
-      "failedToLoadDetails": "Failed to load album details.",
-      "failedToLoadTracks": "Failed to load tracks."
+      "failedToLoadDetails": "Albumdetails konnten nicht geladen werden.",
+      "failedToLoadTracks": "Titel konnten nicht geladen werden."
     }
   },
   "themes": {
     "title": "Themes",
     "basic": "Basis-Themes",
     "advanced": "Erweiterte Themes",
+    "marketplace": "Store-Themes",
+    "matugenTitle": "Matugen-Farben",
+    "matugenDescription": "Von Matugen aus Ihrem Hintergrundbild generierte Farben verwenden",
+    "matugenNotInstalled": "Matugen ist nicht installiert. Installieren Sie es, um Matugen-Farben zu verwenden.",
+    "matugenNotInstalledHint": "Matugen generiert Farben aus Ihrem Hintergrundbild. Installieren Sie es mit: cargo install matugen",
+    "matugenCssPath": "CSS-Pfad",
     "default": "Standard",
-    "description": "Themes aus Ihrem App-Daten-Verzeichnis"
+    "selectPlaceholder": "Theme auswählen",
+    "description": "Themes aus Ihrem App-Daten-Verzeichnis",
+    "tabs": {
+      "myThemes": "Meine Themes",
+      "store": "Store"
+    },
+    "store": {
+      "searchPlaceholder": "Themes suchen...",
+      "install": "Installieren",
+      "installing": "Installiere",
+      "installed": "Installiert",
+      "by": "von",
+      "installError": "{{name}} konnte nicht installiert werden",
+      "loadError": "Theme-Store konnte nicht geladen werden.",
+      "apply": "Anwenden",
+      "active": "Aktiv",
+      "uninstall": "Deinstallieren",
+      "uninstallError": "{{name}} konnte nicht deinstalliert werden"
+    }
   },
   "dashboard": {
     "title": "Dashboard",
-    "empty-state": "No dashboard data available",
-    "empty-state-description": "Enable a plugin that provides dashboard content.",
-    "top-tracks": "Top Tracks",
-    "top-artists": "Top Artists",
-    "top-albums": "Top Albums",
-    "editorial-playlists": "Top Playlists",
-    "new-releases": "New Releases",
-    "filter-artists": "Filter artists...",
-    "filter-albums": "Filter albums...",
-    "filter-playlists": "Filter playlists...",
-    "filter-releases": "Filter releases...",
-    "nothing-found": "Nothing found"
+    "empty-state": "Willkommen bei Nuclear",
+    "empty-state-description": "Installieren Sie ein Plugin, um Top-Titel, Neuerscheinungen und Empfehlungen hier zu sehen.",
+    "empty-state-action": "Plugins durchsuchen",
+    "top-tracks": "Top-Titel",
+    "top-artists": "Top-Künstler",
+    "top-albums": "Top-Alben",
+    "editorial-playlists": "Top-Playlists",
+    "new-releases": "Neuerscheinungen",
+    "filter-artists": "Künstler filtern...",
+    "filter-albums": "Alben filtern...",
+    "filter-playlists": "Playlists filtern...",
+    "filter-releases": "Neuerscheinungen filtern...",
+    "nothing-found": "Nichts gefunden"
   },
   "plugins": {
     "title": "Plugins",
     "addPlugin": "Plugin hinzufügen",
     "tabs": {
-      "installed": "Installed",
+      "installed": "Installiert",
       "store": "Store"
     },
+    "installed": {
+      "empty-state": "Keine Plugins installiert",
+      "empty-state-description": "Durchsuchen Sie den Plugin-Store, um Streaming-, Metadaten- und andere Plugins zu finden.",
+      "empty-state-action": "Zum Store gehen"
+    },
     "store": {
-      "searchPlaceholder": "Search plugins...",
-      "install": "Install",
-      "installing": "Installing",
-      "installed": "Installed",
-      "by": "by",
+      "searchPlaceholder": "Plugins suchen...",
+      "install": "Installieren",
+      "installing": "Installiere",
+      "installed": "Installiert",
+      "by": "von",
       "categories": {
-        "all": "All",
+        "all": "Alle",
         "streaming": "Streaming",
-        "metadata": "Metadata",
-        "lyrics": "Lyrics",
+        "metadata": "Metadaten",
+        "lyrics": "Liedtexte",
         "scrobbling": "Scrobbling",
-        "other": "Other"
+        "other": "Sonstiges"
       },
       "error": {
-        "title": "Failed to load plugins",
-        "description": "Could not fetch the plugin registry. Please check your internet connection.",
-        "retry": "Retry"
+        "title": "Plugins konnten nicht geladen werden",
+        "description": "Das Plugin-Registry konnte nicht abgerufen werden. Bitte überprüfen Sie Ihre Internetverbindung.",
+        "retry": "Erneut versuchen"
       },
       "noResults": {
-        "title": "No plugins found",
-        "filtered": "Try adjusting your search or filters.",
-        "empty": "No plugins available yet."
+        "title": "Keine Plugins gefunden",
+        "filtered": "Versuchen Sie, Ihre Suche oder Filter anzupassen.",
+        "empty": "Noch keine Plugins verfügbar."
       },
       "installError": {
-        "title": "Failed to install {{name}}"
+        "title": "{{name}} konnte nicht installiert werden"
       }
     }
   },
   "updater": {
-    "updateAvailable": "Update available"
+    "updateAvailable": "Update verfügbar",
+    "clickToUpdate": "Klicken zum Aktualisieren",
+    "downloading": "Lade herunter... {{progress}}%",
+    "clickToRestart": "Klicken zum Neustarten"
   },
   "flatpak": {
-    "sandboxWarning": "You're running Nuclear in a Flatpak sandbox. Some features may not work correctly. If you experience issues, try the .deb or AppImage instead.",
-    "dismiss": "Got it"
+    "sandboxWarning": "Sie führen Nuclear in einer Flatpak-Sandbox aus. Einige Funktionen funktionieren möglicherweise nicht korrekt. Wenn Sie Probleme haben, versuchen Sie stattdessen die .deb oder AppImage.",
+    "dismiss": "Verstanden"
   },
   "preferences": {
-    "title": "Preferences",
+    "title": "Einstellungen",
     "general": {
-      "title": "General",
+      "title": "Allgemein",
       "language": {
-        "title": "Language",
-        "description": "Select your preferred language"
+        "title": "Sprache",
+        "description": "Wählen Sie Ihre bevorzugte Sprache"
       }
     },
     "plugins": {
@@ -224,141 +281,164 @@
       "title": "Themes"
     },
     "logs": {
-      "title": "Logs"
+      "title": "Protokolle"
     },
     "whats-new": {
-      "title": "What's New"
+      "title": "Neuigkeiten"
     },
     "shortcuts": {
-      "title": "Key Shortcuts",
+      "title": "Tastenkürzel",
       "sections": {
-        "playback": "Playback",
-        "general": "General"
+        "playback": "Wiedergabe",
+        "general": "Allgemein"
       },
       "commands": {
-        "playback.toggle": "Play / Pause",
-        "playback.next": "Next track",
-        "playback.previous": "Previous track",
-        "playback.seekForward": "Seek forward",
-        "playback.seekBackward": "Seek backward",
-        "playback.volumeUp": "Volume up",
-        "playback.volumeDown": "Volume down",
-        "playback.mute": "Mute / Unmute",
-        "general.toggleSettings": "Open settings"
+        "playback.toggle": "Abspielen / Pause",
+        "playback.next": "Nächster Titel",
+        "playback.previous": "Vorheriger Titel",
+        "playback.seekForward": "Vorwärts spulen",
+        "playback.seekBackward": "Zurück spulen",
+        "playback.volumeUp": "Lauter",
+        "playback.volumeDown": "Leiser",
+        "playback.mute": "Stumm / Stummschalten",
+        "general.toggleSettings": "Einstellungen öffnen"
       },
-      "recording": "Press a key combination...",
-      "resetAll": "Reset all to defaults",
-      "reset": "Reset",
-      "conflict": "This shortcut is already used by \"{{command}}\""
+      "recording": "Drücken Sie eine Tastenkombination...",
+      "resetAll": "Alle zurücksetzen",
+      "reset": "Zurücksetzen",
+      "conflict": "Dieses Tastenkürzel wird bereits von \"{{command}}\" verwendet"
     },
     "appearance": {
-      "title": "Appearance"
+      "title": "Darstellung",
+      "framelessWindow": {
+        "title": "Fenster ohne Rahmen",
+        "description": "Native Titelleiste ausblenden. Ziehen Sie die obere Leiste, um das Fenster zu bewegen."
+      }
     },
     "playback": {
-      "title": "Playback",
+      "title": "Wiedergabe",
       "skipSeconds": {
-        "title": "Skip duration",
-        "description": "Number of seconds to skip forward/backward"
+        "title": "Übersprungene Dauer",
+        "description": "Anzahl der Sekunden zum Vorwärts-/Zurücküberspringen"
       },
       "crossfadeMs": {
-        "title": "Crossfade",
-        "description": "Crossfade duration between tracks in milliseconds"
+        "title": "Überblendung",
+        "description": "Überblendungsdauer zwischen Titeln in Millisekunden"
       },
       "streamExpiryMs": {
-        "title": "Stream expiry time",
-        "description": "How long before a resolved stream URL is considered expired and needs re-resolution"
+        "title": "Stream-Ablaufzeit",
+        "description": "Wie lange bevor eine aufgelöste Stream-URL als abgelaufen gilt und neu aufgelöst werden muss"
       },
       "streamResolutionRetries": {
-        "title": "Stream resolution retries",
-        "description": "Number of times to retry resolving a stream URL before moving to the next candidate"
+        "title": "Stream-Auflösungsversuche",
+        "description": "Anzahl der Versuche, eine Stream-URL aufzulösen, bevor zum nächsten Kandidaten gewechselt wird"
+      },
+      "discoveryVariety": {
+        "title": "Entdeckungsvielfalt",
+        "description": "Wie weit Empfehlungen von Ihrem aktuellen Hören abweichen. Niedriger ist ähnlicher.",
+        "startLabel": "Weniger verrückt",
+        "endLabel": "Mehr verrückt"
       }
     },
     "layout": {
       "title": "Layout"
     },
     "updates": {
-      "title": "Updates",
+      "title": "Aktualisierungen",
       "checkForUpdates": {
-        "title": "Check for updates",
-        "description": "Automatically check for new versions on startup"
+        "title": "Nach Updates suchen",
+        "description": "Beim Start automatisch nach neuen Versionen suchen"
       },
       "autoInstall": {
-        "title": "Auto-install updates",
-        "description": "Download and install updates automatically when available"
+        "title": "Updates automatisch installieren",
+        "description": "Updates automatisch herunterladen und installieren, wenn verfügbar"
       }
     },
     "integrations": {
-      "title": "Integrations",
+      "title": "Integrationen",
       "mcp": {
         "enabled": {
-          "title": "Enable MCP Server",
-          "description": "Start a local MCP server that allows AI tools to control Nuclear."
+          "title": "MCP-Server aktivieren",
+          "description": "Einen lokalen MCP-Server starten, der KI-Tools ermöglicht, Nuclear zu steuern."
         },
         "serverUrl": {
-          "title": "MCP Server URL",
-          "description": "Point your AI tool to this URL to connect to Nuclear."
+          "title": "MCP-Server-URL",
+          "description": "Verweisen Sie Ihr KI-Tool auf diese URL, um sich mit Nuclear zu verbinden."
+        }
+      },
+      "discord": {
+        "enabled": {
+          "title": "Discord Rich Presence",
+          "description": "Zeigen Sie, was Sie auf Ihrem Discord-Profil hören."
         }
       }
     }
   },
   "queue": {
-    "title": "Queue",
+    "title": "Warteschlange",
     "empty": {
-      "title": "Queue is empty",
-      "subtitle": "Add tracks to start playing"
+      "title": "Warteschlange ist leer",
+      "subtitle": "Fügen Sie Titel hinzu, um mit der Wiedergabe zu beginnen"
     },
     "actions": {
-      "remove": "Remove from queue",
-      "clear": "Clear queue",
-      "saveAsPlaylist": "Save queue as playlist"
+      "remove": "Aus Warteschlange entfernen",
+      "clear": "Warteschlange leeren",
+      "saveAsPlaylist": "Warteschlange als Playlist speichern"
     },
     "errors": {
-      "playback": "Playback error"
+      "playback": "Wiedergabefehler"
     }
   },
   "track": {
     "actions": {
-      "playNow": "Play now",
-      "playNext": "Play next",
-      "addToQueue": "Add to queue",
-      "addToFavorites": "Add to favorites",
-      "removeFromFavorites": "Remove from favorites"
+      "playNow": "Jetzt abspielen",
+      "playNext": "Als Nächstes abspielen",
+      "addToQueue": "Zur Warteschlange hinzufügen",
+      "addToFavorites": "Zu Favoriten hinzufügen",
+      "removeFromFavorites": "Aus Favoriten entfernen"
     }
   },
   "streaming": {
     "errors": {
-      "noCandidatesFound": "Failed to find stream candidates",
-      "allCandidatesFailed": "All stream candidates failed"
+      "noCandidatesFound": "Es konnten keine Stream-Kandidaten gefunden werden",
+      "allCandidatesFailed": "Alle Stream-Kandidaten sind fehlgeschlagen"
     }
   },
   "playerBar": {
-    "noTrackPlaying": "No track playing"
+    "noTrackPlaying": "Kein Titel wird abgespielt",
+    "shuffleOn": "Zufallswiedergabe: an",
+    "shuffleOff": "Zufallswiedergabe: aus",
+    "repeatOff": "Wiederholen: aus",
+    "repeatAll": "Wiederholen: alle",
+    "repeatOne": "Wiederholen: einer",
+    "discoveryOn": "Entdecken: an",
+    "discoveryOff": "Entdecken: aus"
   },
   "logs": {
-    "title": "Logs",
-    "searchPlaceholder": "Search logs...",
-    "searchAriaLabel": "Search logs",
-    "levelLabel": "Level:",
-    "scopeLabel": "Scope:",
-    "clearButton": "Clear",
-    "exportButton": "Export",
-    "openLogFolderButton": "Open Log Folder",
-    "noLogsMessage": "No logs to display",
-    "invalidRegexMessage": "Invalid regex pattern",
-    "entryCount": "{{count}} entry",
-    "entryCount_other": "{{count}} entries",
-    "exportSuccess": "Logs exported"
+    "title": "Protokolle",
+    "searchPlaceholder": "Protokolle suchen...",
+    "searchAriaLabel": "Protokolle suchen",
+    "levelLabel": "Stufe:",
+    "scopeLabel": "Bereich:",
+    "clearButton": "Leeren",
+    "exportButton": "Exportieren",
+    "openLogFolderButton": "Protokollordner öffnen",
+    "noLogsMessage": "Keine Protokolle anzuzeigen",
+    "invalidRegexMessage": "Ungültiges Regex-Muster",
+    "entryCount": "{{count}} Eintrag",
+    "entryCount_other": "{{count}} Einträge",
+    "exportSuccess": "Protokolle exportiert"
   },
   "changelog": {
-    "title": "What's New",
-    "seeMore": "See more ({{count}} older)",
+    "title": "Neuigkeiten",
+    "seeMore": "Mehr anzeigen ({{count}} ältere)",
     "types": {
-      "feature": "Feature",
-      "fix": "Fix",
-      "improvement": "Improvement",
-      "chore": "Chore",
+      "feature": "Funktion",
+      "fix": "Korrektur",
+      "improvement": "Verbesserung",
+      "chore": "Wartung",
       "plugin": "Plugin",
-      "docs": "Docs"
+      "docs": "Dokumentation"
     }
   }
 }
