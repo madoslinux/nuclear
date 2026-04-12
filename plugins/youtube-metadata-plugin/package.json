@@ -1,0 +1,17 @@
+{
+  "name": "nuclear-youtube-metadata-plugin",
+  "version": "0.1.0",
+  "description": "Search music directly from YouTube as a metadata provider",
+  "author": "Nuclear Community",
+  "license": "AGPL-3.0-only",
+  "main": "src/index.ts",
+  "type": "module",
+  "nuclear": {
+    "displayName": "YouTube Metadata",
+    "category": "metadata",
+    "enabledByDefault": true
+  },
+  "dependencies": {
+    "@nuclearplayer/plugin-sdk": "^2.8.0"
+  }
+}

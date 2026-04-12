@@ -128,7 +128,9 @@ export const usePluginStore = create<PluginStore>((set, get) => ({
       } = await loadPluginData(path, id, metadata.version);
 
       const now = new Date().toISOString();
-      const enabled = existing ? existing.enabled : false;
+      const enabled = existing
+        ? existing.enabled
+        : (loadedMetadata.enabledByDefault ?? false);
 
       await upsertRegistryEntry({
         id,

@@ -13,6 +13,7 @@ export type PluginManifest = {
     category?: string;
     icon?: PluginIcon;
     permissions?: string[];
+    enabledByDefault?: boolean;
   };
 };
 
@@ -33,6 +34,7 @@ export type PluginMetadata = {
   category?: string;
   icon?: PluginIcon;
   permissions: string[];
+  enabledByDefault?: boolean;
 };
 
 export type LoadedPlugin = {
